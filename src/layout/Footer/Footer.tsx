@@ -1,5 +1,3 @@
-import "./Footer.sass";
-
 const Footer = () => {
 
 }

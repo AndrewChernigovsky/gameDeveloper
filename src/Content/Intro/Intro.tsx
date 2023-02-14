@@ -1,5 +1,3 @@
-import "./Intro.sass";
-
 const Intro = () => {
 
 }

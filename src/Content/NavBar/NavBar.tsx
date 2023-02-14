@@ -1,5 +1,3 @@
-import "./NavBar.sass";
-
 const NavBar = () => {
 
 }

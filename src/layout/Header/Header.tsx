@@ -1,5 +1,3 @@
-import "./Header.sass";
-
 const Header = () => {
 
 }

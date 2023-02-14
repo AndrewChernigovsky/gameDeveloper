@@ -1,5 +1,3 @@
-import "./Portfolio.sass";
-
 const Portfolio = () => {
 
 }
