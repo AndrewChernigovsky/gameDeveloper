@@ -16,11 +16,7 @@ function App() {
 				isDark={isDark}
 			/>
 			<HomePage />
-			<Footer
-				colorMode={colorMode}
-				toggleColorMode={toggleColorMode}
-				isDark={isDark}
-			/>
+			<Footer/>
 		</div>
 	);
 }
