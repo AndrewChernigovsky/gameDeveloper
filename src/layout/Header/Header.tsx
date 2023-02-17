@@ -4,7 +4,9 @@ import {
 	useColorMode,
 	Switch,
 	Button,
+	Box,
 	IconButton,
+	useColorModeValue
 } from '@chakra-ui/react';
 
 import { HashLink } from 'react-router-hash-link';
@@ -14,6 +16,8 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Header = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
+	const bg = useColorModeValue('red.100', 'red.200')
+	const color = useColorModeValue('white', 'gray.800')
 	const isDark = colorMode === 'dark';
 	const [display, changeDisplay] = useState('none');
 	return (
@@ -48,7 +52,7 @@ const Header = () => {
 					display={display}
 				>
 					<Flex justify="flex-end">
-	
+
 						<IconButton
 							mt={2}
 							mr={2}
@@ -94,6 +98,12 @@ const Header = () => {
 							isChecked={isDark}
 							onChange={toggleColorMode}
 						/>
+						<Box mb={4} bg={bg} color={color} leftIcon={<EmailIcon />}>
+							This box's style will change based on the color mode.
+						</Box>
+						<Button size='sm' onClick={toggleColorMode}>
+							Toggle Mode
+						</Button>
 					</Flex>
 				</Flex>
 			</Container>
