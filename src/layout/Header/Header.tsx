@@ -1,10 +1,12 @@
 import {
 	Flex,
 	Container,
-	useColorMode,
 	Switch,
+<<<<<<< HEAD
 	Button,
 	Box,
+=======
+>>>>>>> 9066a2166097aa8745e09a372626281de2bd0923
 	IconButton,
 	useColorModeValue
 } from '@chakra-ui/react';
@@ -14,12 +16,28 @@ import { HashLink } from 'react-router-hash-link';
 import { useState } from 'react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
+<<<<<<< HEAD
 const Header = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const bg = useColorModeValue('red.100', 'red.200')
 	const color = useColorModeValue('white', 'gray.800')
 	const isDark = colorMode === 'dark';
+=======
+
+interface IModeTheme {
+	colorMode: any;
+	toggleColorMode: () => void;
+	isDark: boolean;
+}
+
+const Header = ({
+	colorMode,
+	toggleColorMode,
+	isDark}: IModeTheme) => {
+
+>>>>>>> 9066a2166097aa8745e09a372626281de2bd0923
 	const [display, changeDisplay] = useState('none');
+	
 	return (
 		<header>
 			<Container maxW={{ lg: '1440px' }} fontFamily="Roboto" fontWeight={600}>
