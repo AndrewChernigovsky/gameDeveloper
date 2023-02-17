@@ -3,14 +3,8 @@ import { useColorModeValue } from "@chakra-ui/react";
 
 import { Link } from "react-router-dom";
 
-interface IModeTheme {
-  colorMode: any;
-  toggleColorMode: () => void;
-  isDark: boolean;
-}
-
-const Footer = ({colorMode, toggleColorMode }: IModeTheme) => {
-  const color = useColorModeValue("blue", "white");
+const Footer = () => {
+  const color = useColorModeValue("black", "white");
 
   return (
     <footer>
