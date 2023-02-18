@@ -69,6 +69,20 @@ body {
 }
 
 .social-link {
-	height: 50px;
-	width: 50px;
+	max-height: 65px;
+	max-width: 65px;
+	display: flex;
+}
+
+.social-link:not(:first-child) {
+	margin-left: 10px;
+}
+
+a {
+	transition: 0.3s;
+}
+
+a:hover {
+	opacity: 0.6;
+	transition: 0.3s;
 }

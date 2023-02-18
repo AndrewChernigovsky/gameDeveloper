@@ -10,10 +10,13 @@ const breakpoints = {
 	'2xl': '1536px',
 }
 
-const theme = extendTheme({
+export const Darktheme = extendTheme({
 	breakpoints,
 	fonts,
 	colors: {
 		black: '#16161D',
+		white: '#55555D',
+		blue: '#0000FF',
+		gray: '#E2E8F0',
 	}
 })

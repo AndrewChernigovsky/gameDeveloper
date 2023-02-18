@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import {HashRouter} from 'react-router-dom'
+import { Darktheme } from './layout/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.StrictMode>
 		<HashRouter>
-			<ChakraProvider>
+			<ChakraProvider resetCSS theme={Darktheme}>
 				<App />
 			</ChakraProvider>
 		</HashRouter>

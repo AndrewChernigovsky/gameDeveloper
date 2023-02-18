@@ -11,7 +11,6 @@ function App() {
 	return (
 		<div className="wrapper">
 			<Header
-				colorMode={colorMode}
 				toggleColorMode={toggleColorMode}
 				isDark={isDark}
 			/>
