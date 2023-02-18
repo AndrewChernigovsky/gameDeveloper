@@ -1,46 +1,26 @@
-import {
-	Flex,
-	Container,
-	Switch,
-<<<<<<< HEAD
-	Button,
-	Box,
-=======
->>>>>>> 9066a2166097aa8745e09a372626281de2bd0923
-	IconButton,
-	useColorModeValue
-} from '@chakra-ui/react';
+import { Flex, Container, Switch, IconButton } from '@chakra-ui/react';
 
 import { HashLink } from 'react-router-hash-link';
 
 import { useState } from 'react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { useColorModeValue } from '@chakra-ui/react';
 
-<<<<<<< HEAD
-const Header = () => {
-	const { colorMode, toggleColorMode } = useColorMode();
-	const bg = useColorModeValue('red.100', 'red.200')
-	const color = useColorModeValue('white', 'gray.800')
-	const isDark = colorMode === 'dark';
-=======
 
 interface IModeTheme {
-	colorMode: any;
 	toggleColorMode: () => void;
 	isDark: boolean;
 }
 
-const Header = ({
-	colorMode,
-	toggleColorMode,
-	isDark}: IModeTheme) => {
-
->>>>>>> 9066a2166097aa8745e09a372626281de2bd0923
+const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
-	
+	const color = useColorModeValue('black', 'white');
+	const colorFonts = useColorModeValue('white', 'black');
+	const colorSwitch = useColorModeValue('blue', 'white');
+
 	return (
-		<header>
-			<Container maxW={{ lg: '1440px' }} fontFamily="Roboto" fontWeight={600}>
+		<header style={{ backgroundColor: color, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts,}}>
+			<Container maxW={{ lg: '1440px' }} fontWeight={600}>
 				<Flex>
 					<Flex
 						pos="fixed"
@@ -50,16 +30,17 @@ const Header = ({
 					></Flex>
 					<Switch
 						pos="fixed"
-						top="25px"
+						top="20px"
 						right="10px"
-						color="green"
+						colorScheme={colorSwitch}
+						size="lg"
 						isChecked={isDark}
 						onChange={toggleColorMode}
 					/>
 				</Flex>
 				<Flex
 					w="100vw"
-					bgColor="gray.50"
+					bgColor='#718096'
 					zIndex={20}
 					h="100vh"
 					top="0"
@@ -70,7 +51,6 @@ const Header = ({
 					display={display}
 				>
 					<Flex justify="flex-end">
-
 						<IconButton
 							mt={2}
 							mr={2}
@@ -79,7 +59,6 @@ const Header = ({
 							icon={<CloseIcon />}
 							onClick={() => changeDisplay('none')}
 						></IconButton>
-
 					</Flex>
 					<Flex flexDir="column" align="center">
 						<HashLink to="aboutMe">About Me</HashLink>
@@ -89,14 +68,19 @@ const Header = ({
 				</Flex>
 
 				<Flex>
-					<Flex pos="fixed" top="10px" right="45px" >
+					<Flex pos="fixed" top="10px" right="45px">
 						<Flex pos="fixed" top="1rem" right="1rem">
-							<Flex display={['none', 'none', 'flex', 'flex']} mr="40px" mt="5px" gap="10px">
-								<HashLink to="aboutMe">About Me</HashLink>
-								<HashLink to="projects">
+							<Flex
+								display={['none', 'none', 'flex', 'flex']}
+								mr="60px"
+								mt="5px"
+								gap="10px"
+							>
+								<HashLink to="aboutMe" className='link'>About Me</HashLink>
+								<HashLink to="projects" className='link'>
 									Commercial Projects
 								</HashLink>
-								<HashLink to="skills">Skills</HashLink>
+								<HashLink to="skills" className='link'>Skills</HashLink>
 							</Flex>
 						</Flex>
 						<IconButton
@@ -110,18 +94,13 @@ const Header = ({
 
 						<Switch
 							pos="fixed"
-							top="25px"
+							top="20px"
 							right="10px"
-							color="green"
+							colorScheme={colorSwitch}
+							size="lg"
 							isChecked={isDark}
 							onChange={toggleColorMode}
 						/>
-						<Box mb={4} bg={bg} color={color} leftIcon={<EmailIcon />}>
-							This box's style will change based on the color mode.
-						</Box>
-						<Button size='sm' onClick={toggleColorMode}>
-							Toggle Mode
-						</Button>
 					</Flex>
 				</Flex>
 			</Container>
