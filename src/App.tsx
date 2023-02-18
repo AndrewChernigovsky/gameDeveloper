@@ -2,6 +2,7 @@ import Header from "./layout/Header/Header";
 import HomePage from "./pages/HomePage/Homepage";
 import Skills from "./Content/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
+import "./App.css";
 
 import { useColorMode } from "@chakra-ui/react";
 
