@@ -11,8 +11,6 @@ const Footer = () => {
     <footer>
       <Container
         maxW={{ lg: "1440px" }}
-        fontFamily="Roboto"
-        fontWeight={600}
         borderTop={`1px solid `}
       >
         <Grid

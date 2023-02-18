@@ -26,7 +26,7 @@ const Header = ({
 	
 	return (
 		<header>
-			<Container maxW={{ lg: '1440px' }} fontFamily="Roboto" fontWeight={600}>
+			<Container maxW={{ lg: '1440px' }} fontWeight={600}>
 				<Flex>
 					<Flex
 						pos="fixed"
