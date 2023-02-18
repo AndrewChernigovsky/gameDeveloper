@@ -82,7 +82,8 @@ a {
 	transition: 0.3s;
 }
 
-a:hover {
+.link:hover {
 	opacity: 0.6;
 	transition: 0.3s;
 }
+

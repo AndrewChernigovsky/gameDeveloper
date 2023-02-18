@@ -76,11 +76,11 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 								mt="5px"
 								gap="10px"
 							>
-								<HashLink to="aboutMe">About Me</HashLink>
-								<HashLink to="projects">
+								<HashLink to="aboutMe" className='link'>About Me</HashLink>
+								<HashLink to="projects" className='link'>
 									Commercial Projects
 								</HashLink>
-								<HashLink to="skills">Skills</HashLink>
+								<HashLink to="skills" className='link'>Skills</HashLink>
 							</Flex>
 						</Flex>
 						<IconButton

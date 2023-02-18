@@ -18,5 +18,6 @@ export const Darktheme = extendTheme({
 		white: '#55555D',
 		blue: '#0000FF',
 		gray: '#E2E8F0',
+		dark: '#0000FF'
 	}
 })
