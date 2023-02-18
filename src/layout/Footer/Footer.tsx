@@ -19,8 +19,8 @@ const Footer = () => {
           p={"20px 20px"}
           gap="20px"
         >
-          <Text>Chat me: </Text>
-          <Flex alignItems="center">
+          <Text textAlign="center">Contact me</Text>
+          <Flex alignItems="center" justifyContent="center">
             <Link to="https://vk.com/im?media=&sel=307022061" className="social-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const Footer = () => {
 </svg>
             </Link>
           </Flex>
-          <Text>All rigths reserved 2023</Text>
+				  <Text textAlign="center">© Alexandr Volyansky <br/> All content and trademarks property of their respective owners. 2023</Text>
         </Grid>
       </Container>
     </footer>
