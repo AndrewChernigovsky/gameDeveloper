@@ -15,10 +15,17 @@ export const Darktheme = extendTheme({
 	breakpoints,
 	fonts,
 	colors: {
-		black: '#16161D',
-		white: '#55555D',
-		blue: '#0000FF',
-		gray: '#E2E8F0',
-		dark: '#0000FF'
+		// black: '#16161D',
+		// blue: '#0000FF',
+		// gray: '#E2E8F0',
+		// dark: '#1111FF',
+		
+		// customize: {
+		// 	100: 'green'
+		// }
+
+		dark: {
+			blue: '#000080'
+		}
 	}
 })

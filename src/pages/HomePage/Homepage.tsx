@@ -1,11 +1,19 @@
+import About from "../../Content/About/About";
+import Intro from "../../Content/Intro/Intro";
 import Portfolio from "../../Content/Portfolio/Portfolio";
-import Skills from "../../Content/Skills/Skills";
+import Advantages from "./../../Content/Advantages/Advantages"
 
-const HomePage = () => {
+interface IModeTheme {
+	toggleColorMode: () => void;
+}
+
+const HomePage = ({ toggleColorMode }: IModeTheme) => {
 	return (
 		<main className="main">
-			<Skills />
-			<Portfolio/>
+			<Intro />
+			<About />
+			<Advantages toggleColorMode={toggleColorMode} />
+			<Portfolio />
 		</main>
 	);
 }
