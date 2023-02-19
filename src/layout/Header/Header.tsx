@@ -1,10 +1,11 @@
 import { Flex, Container, Switch, IconButton } from '@chakra-ui/react';
 
 import { HashLink } from 'react-router-hash-link';
-
 import { useState } from 'react';
+
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useColorModeValue } from '@chakra-ui/react';
+import { Darktheme } from '../theme';
 
 
 interface IModeTheme {
@@ -14,9 +15,9 @@ interface IModeTheme {
 
 const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
-	const color = useColorModeValue('black', 'white');
+	const color = useColorModeValue('#000080', 'white');
 	const colorFonts = useColorModeValue('white', 'black');
-	const colorSwitch = useColorModeValue('blue', 'white');
+	const colorSwitch = useColorModeValue('blue', 'blue');
 
 	return (
 		<header style={{ backgroundColor: color, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts,}}>
@@ -28,15 +29,6 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 						right="1rem"
 						align="center"
 					></Flex>
-					<Switch
-						pos="fixed"
-						top="20px"
-						right="10px"
-						colorScheme={colorSwitch}
-						size="lg"
-						isChecked={isDark}
-						onChange={toggleColorMode}
-					/>
 				</Flex>
 				<Flex
 					w="100vw"
