@@ -28,15 +28,6 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 						right="1rem"
 						align="center"
 					></Flex>
-					<Switch
-						pos="fixed"
-						top="20px"
-						right="10px"
-						colorScheme={colorSwitch}
-						size="lg"
-						isChecked={isDark}
-						onChange={toggleColorMode}
-					/>
 				</Flex>
 				<Flex
 					w="100vw"

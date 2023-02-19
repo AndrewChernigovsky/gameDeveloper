@@ -23,7 +23,7 @@ function App() {
 				isDark={isDark}
 			/>
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<HomePage toggleColorMode={toggleColorMode} />} />
 				<Route path="/project1" element={<Project1 />} />
 				<Route path="/project2" element={<Project2 />} />
 				<Route path="/project3" element={<Project3 />} />
