@@ -1,13 +1,7 @@
 import { Grid, Container, Heading, Flex, Icon,Text } from '@chakra-ui/react';
-
-import { Link } from 'react-router-dom';
 import { useColorModeValue } from '@chakra-ui/react';
 
-interface IModeTheme {
-	toggleColorMode: () => void;
-}
-
-const Advantages = ({ toggleColorMode }: IModeTheme) => {
+const Advantages = () => {
 	const color = useColorModeValue('red', 'blue');
 		
 	return (
