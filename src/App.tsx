@@ -1,8 +1,10 @@
-import Header from './layout/Header/Header';
-import HomePage from './pages/HomePage/Homepage';
-import Footer from './layout/Footer/Footer';
-import './App.css';
-import { useColorMode } from '@chakra-ui/react';
+import Header from "./layout/Header/Header";
+import HomePage from "./pages/HomePage/Homepage";
+import Skills from "./Content/Skills/Skills";
+import Footer from "./layout/Footer/Footer";
+import "./App.css";
+
+import { useColorMode } from "@chakra-ui/react";
 
 import Project1 from './Content/Portfolio/project1'
 import Project2 from './Content/Portfolio/project2'

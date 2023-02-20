@@ -20,7 +20,7 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const colorSwitch = useColorModeValue('blue', 'blue');
 
 	return (
-		<header style={{ backgroundColor: color, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts,}}>
+		<header style={{ backgroundColor: color, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts, zIndex: 1,}}>
 			<Container maxW={{ lg: '1440px' }} fontWeight={600}>
 				<Flex>
 					<Flex
