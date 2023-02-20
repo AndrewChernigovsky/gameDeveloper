@@ -4,7 +4,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const color = useColorModeValue("black", "white");
+	const color = useColorModeValue("#07035a", "white");
 
   return (
     <footer>

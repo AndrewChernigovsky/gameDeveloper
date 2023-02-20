@@ -3,7 +3,7 @@ import { images } from './images';
 
 const About = () => {
 	return (
-		<Box className="about-section" pt={100}>
+		<Box className="about-section" pt={100} id="aboutMe">
 			<Box
 				display={["block", "block", "block", "flex"]}
 				justifyContent="space-around"

@@ -1,13 +1,11 @@
-import { Flex, Container, Switch, IconButton, ScaleFade } from '@chakra-ui/react';
+import { Flex, Container, Switch, IconButton} from '@chakra-ui/react';
 
-import { HashLink } from 'react-router-hash-link';
+import { HashLink  } from 'react-router-hash-link';
 import { useState } from 'react';
 
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useColorModeValue } from '@chakra-ui/react';
-
-
-
+import { Link } from 'react-router-dom';
 
 
 interface IModeTheme {
@@ -18,14 +16,14 @@ interface IModeTheme {
 const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
 	const color = useColorModeValue('#000080', 'white');
-	const colorFonts = useColorModeValue('white', 'black');
-	const colorSwitch = useColorModeValue('blue', 'blue');
+	const colorFonts = useColorModeValue('white', '#000080');
+	const colorSwitch = useColorModeValue('#000080', 'black');
 
 
 	return (
-		<header style={{ backgroundColor: color, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts, zIndex: 1, }}>
+		<header style={{ backgroundColor: color , minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts, zIndex: 1, }}>
 		
-				<Container maxW={{ lg: '1440px' }} fontWeight={600}>
+			<Container maxW={{ lg: '1440px' }} fontWeight={600}>
 					<Flex>
 						<Flex
 							pos="fixed"
@@ -57,9 +55,9 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 							></IconButton>
 						</Flex>
 						<Flex flexDir="column" align="center">
-							<HashLink to="aboutMe">About Me</HashLink>
-							<HashLink to="projects">Commercial Projects</HashLink>
-							<HashLink to="skills">Skills</HashLink>
+							<HashLink smooth to="/#aboutMe">About Me</HashLink>
+							<HashLink smooth to="/#projects">Commercial Projects</HashLink>
+							<HashLink smooth to="/#skills">Skills</HashLink>
 						</Flex>
 					</Flex>
 
@@ -88,11 +86,14 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 								onClick={() => changeDisplay('flex')}
 							/>
 
-							<Switch
+						<Switch
+							id="Switch"
+							variant="#Switch"
 								pos="fixed"
 								top="20px"
 								right="10px"
-								colorScheme={colorSwitch}
+							// colorScheme={colorSwitch}
+							// color={colorSwitch}
 								size="lg"
 								isChecked={isDark}
 								onChange={toggleColorMode}

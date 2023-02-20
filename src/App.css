@@ -74,6 +74,12 @@ body {
 	display: flex;
 }
 
+.social-link:hover svg {
+	fill: white;
+	opacity: 1;
+	transition: 5s;
+}
+
 .social-link:not(:first-child) {
 	margin-left: 10px;
 }
@@ -87,3 +93,7 @@ a {
 	transition: 0.3s;
 }
 
+.intro-section video {
+	width: 100%;
+	height: '500px';
+}
