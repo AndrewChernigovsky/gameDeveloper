@@ -1,4 +1,5 @@
-import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
+import { mode } from "@chakra-ui/theme-tools"
 
 const fonts = { roboto: `'Roboto', sans-serif` }
 
@@ -15,17 +16,46 @@ export const Darktheme = extendTheme({
 	breakpoints,
 	fonts,
 	colors: {
-		// black: '#16161D',
-		// blue: '#0000FF',
-		// gray: '#E2E8F0',
-		// dark: '#1111FF',
-		
-		// customize: {
-		// 	100: 'green'
-		// }
-
 		dark: {
-			blue: '#000080'
+			res: '#07035a',
+			white: '#001230'
+		}
+	},
+	config: {
+		disableTransitionOnChange: false
+	},
+	styles: {
+		global: (props: any) => ({
+			body: {
+				fontFamily: "body",
+				color: mode("#0a0a0a", "#8b00ff")(props),
+				bg: mode("#FFC500", "#0a0a0a")(props),
+				lineHeight: "base",
+			},
+		}),
+	},
+	components: {
+		Switch: {
+			variants: {
+				"with-shadow": {
+					bg: "red.400",
+					boxShadow: "0 0 2px 2px #efdfde",
+				},
+
+				'#Switch': (props: any) => ({
+					backgroundColor: mode("gray.800", "gray.900")(props),
+					colorScheme: mode("blue", "yellow"),
+					bg: mode("blue", "dark.res")(props),
+					color: mode("gray.800", "whiteAlpha.900")(props),
+				}),
+
+				// baseStyle: (colorMode: any ) => {
+				// 	return {
+				// 		color: colorMode === 'dark' ? 'red.300' : 'blue.300',
+				// 		fontWeight: 'normal',
+				// 	};
+				// },
+			},
 		}
 	}
 })

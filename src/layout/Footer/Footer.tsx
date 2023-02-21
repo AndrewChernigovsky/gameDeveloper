@@ -4,7 +4,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const color = useColorModeValue("black", "white");
+	const color = useColorModeValue("#0a0a0a", "#8b00ff");
 
   return (
     <footer>
@@ -83,7 +83,7 @@ const Footer = () => {
 </svg>
             </Link>
           </Flex>
-				  <Text textAlign="center">© Alexandr Volyansky <br/> All content and trademarks property of their respective owners. 2023</Text>
+				  <Text textAlign="center">© Alexandr Volyanskiy <br/> All content and trademarks property of their respective owners. 2023</Text>
         </Grid>
       </Container>
     </footer>

@@ -1,6 +1,5 @@
 import Header from "./layout/Header/Header";
 import HomePage from "./pages/HomePage/Homepage";
-import Skills from "./Content/Skills/Skills";
 import Footer from "./layout/Footer/Footer";
 import "./App.css";
 
@@ -20,19 +19,20 @@ function App() {
 
 	return (
 		<div className="wrapper">
+
 			<Header
 				toggleColorMode={toggleColorMode}
 				isDark={isDark}
 			/>
 			<Routes>
-				<Route path="/" element={<HomePage toggleColorMode={toggleColorMode} />} />
+				<Route path="/" element={<HomePage />} />
 				<Route path="/project1" element={<Project1 />} />
 				<Route path="/project2" element={<Project2 />} />
 				<Route path="/project3" element={<Project3 />} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
-
 			<Footer />
+
 		</div>
 	);
 }
