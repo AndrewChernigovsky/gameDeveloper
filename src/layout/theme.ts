@@ -4,12 +4,12 @@ import { mode } from "@chakra-ui/theme-tools"
 const fonts = { roboto: `'Roboto', sans-serif` }
 
 const breakpoints = {
-  sm: '320px',
-  sm1: '600px',
-  md: '768px',
-  lg: '960px',
-  xl: '1200px',
-  '2xl': '1536px',
+	sm: '320px',
+	sm1: '600px',
+	md: '768px',
+	lg: '960px',
+	xl: '1200px',
+	'2xl': '1536px',
 }
 
 export const Darktheme = extendTheme({
@@ -28,8 +28,8 @@ export const Darktheme = extendTheme({
 		global: (props: any) => ({
 			body: {
 				fontFamily: "body",
-				color: mode("#0a0a0a", "#8b00ff")(props),
-				bg: mode("#FFC500", "#0a0a0a")(props),
+				// color: mode("#0a0a0a", "#8b00ff")(props),
+				// bg: mode("#FFC500", "#0a0a0a")(props),
 				lineHeight: "base",
 			},
 		}),
@@ -43,9 +43,8 @@ export const Darktheme = extendTheme({
 				},
 
 				'#Switch': (props: any) => ({
-					backgroundColor: mode("gray.800", "gray.900")(props),
-					colorScheme: mode("blue", "yellow"),
-					bg: mode("blue", "dark.res")(props),
+					backgroundColor: mode("blue", "yellow")(props),
+					bg: mode("blue", "yellow")(props),
 					color: mode("gray.800", "whiteAlpha.900")(props),
 				}),
 
