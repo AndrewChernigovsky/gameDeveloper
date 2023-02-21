@@ -17,7 +17,7 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
 	const color = useColorModeValue('#000080', 'white');
 	const colorFonts = useColorModeValue('white', '#000080');
-	const colorSwitch = useColorModeValue('#000080', 'black');
+	const colorSwitch = useColorModeValue('#000080', '#8b00ff');
 
 
 	return (
@@ -89,14 +89,14 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 						<Switch
 							id="Switch"
 							variant="#Switch"
-								pos="fixed"
-								top="20px"
-								right="10px"
+							pos="fixed"
+							top="20px"
+							right="10px"
 							// colorScheme={colorSwitch}
 							// color={colorSwitch}
-								size="lg"
-								isChecked={isDark}
-								onChange={toggleColorMode}
+							size="lg"
+							isChecked={isDark}
+							onChange={toggleColorMode}
 							/>
 						</Flex>
 					</Flex>
