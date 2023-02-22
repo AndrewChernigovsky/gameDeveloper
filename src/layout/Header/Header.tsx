@@ -1,23 +1,22 @@
-import { Flex, Container, Switch, IconButton} from '@chakra-ui/react';
+import { Flex, Container, Switch, IconButton } from "@chakra-ui/react";
 
-import { HashLink  } from 'react-router-hash-link';
-import { useState } from 'react';
+import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
 
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { useColorModeValue } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { useColorModeValue } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 interface IModeTheme {
-	toggleColorMode: () => void;
-	isDark: boolean;
+  toggleColorMode: () => void;
+  isDark: boolean;
 }
 
 const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
 	const color = useColorModeValue('#000080', 'white');
 	const colorFonts = useColorModeValue('white', '#000080');
-	// const colorSwitch = useColorModeValue('#000080', '#8b00ff');
+	const colorSwitch = useColorModeValue('#000080', '#8b00ff');
 
 
 	return (
@@ -55,9 +54,9 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 							></IconButton>
 						</Flex>
 						<Flex flexDir="column" align="center">
-							<HashLink to="#aboutMe">About Me</HashLink>
-						<HashLink to="#projects">Commercial Projects</HashLink>
-							<HashLink to="#skills">Skills</HashLink>
+							<HashLink smooth to="/#aboutMe">About Me</HashLink>
+							<HashLink smooth to="/#projects">Commercial Projects</HashLink>
+							<HashLink smooth to="/#skills">Skills</HashLink>
 						</Flex>
 					</Flex>
 
@@ -70,11 +69,11 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 									mt="5px"
 									gap="10px"
 								>
-									<HashLink to="#aboutMe" className='link'>About Me</HashLink>
-									<HashLink to="#projects" className='link'>
+									<HashLink to="aboutMe" className='link'>About Me</HashLink>
+									<HashLink to="projects" className='link'>
 										Commercial Projects
 									</HashLink>
-									<HashLink to="#skills" className='link'>Skills</HashLink>
+									<HashLink to="skills" className='link'>Skills</HashLink>
 								</Flex>
 							</Flex>
 							<IconButton
@@ -88,7 +87,7 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 
 						<Switch
 							id="Switch"
-							// variant="#Switch"
+							variant="#Switch"
 							pos="fixed"
 							top="20px"
 							right="10px"
