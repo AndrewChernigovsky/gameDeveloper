@@ -214,11 +214,11 @@ a {
 	border: 2px solid transparent;
 }
 
-a:hover {
+.imageWrapper:hover {
 	border: 2px solid pink;
 }
 
- a img:not(:hover, :focus) {
+a img:not(:hover, :focus) {
 	filter: blur(2px);
 }
 
