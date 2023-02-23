@@ -1,10 +1,14 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { images } from './images';
 
-const About = () => {
+interface IModeTheme {
+	isDark: boolean;
+}
+
+const About = ({isDark}: IModeTheme) => {
 	return (
 		<Box className="about-section" pt={100} m='0 auto'>
-			<Heading as='h2' size={["xl", "2xl", "3xl", "4xl"]} textAlign='center' mb='30px'>ABOUT</Heading>
+			<Heading className={`${isDark ? 'theme-ligth' :  'theme-dark'}`} as='h2' size={["xl", "2xl", "3xl", "4xl"]} textAlign='center' mb='30px'>ABOUT</Heading>
 			<Container
 				display={["block", "block", "block", "flex"]}
 				justifyContent="space-between"
@@ -12,7 +16,7 @@ const About = () => {
 				minW='2xl'
 			>
 				<Box maxW={["100%", "100%", "10%", "100%"]}>
-					<Heading mb="30px" fontWeight='500' size={["sm", "md", "md", "lg", "2xl"]}> - I know who I am and what I am capable of</Heading>
+					<Text mb="30px" fontWeight='500' size={["sm", "md", "md", "lg", "2xl"]}> - I know who I am and what I am capable of</Text>
 					<p className="subtitle">
 						Individual approach to any of the tasks. The possibility of edits
 						and additions to the task. Prospects for long-term work.

@@ -4,12 +4,16 @@ import Portfolio from "../../Content/Portfolio/Portfolio";
 import Advantages from "./../../Content/Advantages/Advantages"
 import Skills from './../../Content/Skills/Skills';
 
-const HomePage = () => {
+interface IModeTheme {
+	isDark: boolean;
+}
+
+const HomePage = ({ isDark }: IModeTheme) => {
 	return (
 		<main className="main">
 			<Intro />
 			<Skills />
-			<About />
+			<About isDark={isDark} />
 			<Advantages/>
 			<Portfolio />
 		</main>

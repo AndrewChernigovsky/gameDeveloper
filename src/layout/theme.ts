@@ -28,8 +28,8 @@ export const Darktheme = extendTheme({
 		global: (props: any) => ({
 			body: {
 				fontFamily: "body",
-				// color: mode("#0a0a0a", "#8b00ff")(props),
-				// bg: mode("#FFC500", "#0a0a0a")(props),
+				color: mode("#0a0a0a", "#8b00ff")(props),
+				bg: mode("#FFC500", "#0a0a0a")(props),
 				lineHeight: "base",
 			},
 		}),

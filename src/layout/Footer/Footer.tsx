@@ -11,7 +11,7 @@ const Footer = () => {
 		<footer>
 			<Container
 				maxW={{ lg: "1440px" }}
-				borderTop={`1px solid `}
+				borderTop={`1px solid #8b00ff`}
 			>
 				<Grid
 					m="0 auto"
