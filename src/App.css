@@ -14,6 +14,7 @@
 html,
 body {
 	height: 100%;
+	/* overflow-x: hidden; */
 }
 
 html {
@@ -301,7 +302,7 @@ a img:not(:hover, :focus) {
   }
 }
 
-svg {
+.circle + svg {
   width: 0;
   height: 0;
 }

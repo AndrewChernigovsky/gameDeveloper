@@ -3,6 +3,9 @@ import { useRef, useEffect } from 'react';
 import { CursorFire } from './CursorFire';
 
 const Cursor = () => {
+
+	const body = document.querySelector('body');
+
 	const delay = 18;
 
 	const dot = useRef<HTMLDivElement>(null);
@@ -10,6 +13,9 @@ const Cursor = () => {
 
 	const cursorVisible = useRef(true);
 	const cursorEnglared = useRef(false);
+
+	const windowInnerWidth = window.innerWidth;
+	// const windowScreenHeigth = window.screen.height;
 
 	const endX = useRef(window.innerWidth / 2);
 	const endY = useRef(window.innerHeight / 2);
@@ -106,6 +112,27 @@ const Cursor = () => {
 
 		requestRef.current = requestAnimationFrame(animateDotOutLine);
 	};
+
+	if (windowInnerWidth > _x.current && body) {
+		body.style.overflowX = 'hidden'
+	} else {
+		if (body) {
+			body.style.overflowX = 'auto'
+		}
+	}
+
+	// if (windowScreenHeigth < _y.current && body) {
+	// 	body.style.overflowY = 'hidden'
+	// 	_y.current = windowScreenHeigth 
+
+	// } else {
+	// 	if (body) {
+	// 		body.style.overflowY = 'auto'
+	// 	}
+	// }
+
+	// console.log(windowScreenHeigth)
+	// console.log(_y.current)
 
 	return (
 		<>
