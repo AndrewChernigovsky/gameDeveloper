@@ -14,15 +14,15 @@ interface IModeTheme {
 
 const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
-	const color = useColorModeValue('#000080', 'white');
-	const colorFonts = useColorModeValue('white', '#000080');
-	const colorSwitch = useColorModeValue('#000080', '#8b00ff');
+	const color = useColorModeValue('#8b00ff', '#000080');
+	const colorHeader = useColorModeValue(' #0a0a0a ', '8b00ff');
+	// const colorSwitch = useColorModeValue('#000080', '#8b00ff');
 
 
 	return (
-		<header style={{ backgroundColor: color , minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: colorFonts, zIndex: 1, }}>
+		<header style={{ backgroundColor: colorHeader , minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, paddingBottom: '20px', color: color, zIndex: 551, left: '0'}}>
 		
-			<Container maxW={{ lg: '1440px' }} fontWeight={600}>
+			<Container maxW='1440px' fontWeight={600}>
 					<Flex>
 						<Flex
 							pos="fixed"
@@ -53,10 +53,10 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 								onClick={() => changeDisplay('none')}
 							></IconButton>
 						</Flex>
-						<Flex flexDir="column" align="center">
-							<HashLink smooth to="/#aboutMe">About Me</HashLink>
-							<HashLink smooth to="/#projects">Commercial Projects</HashLink>
-							<HashLink smooth to="/#skills">Skills</HashLink>
+						<Flex flexDir="column" align="center" maxW='1440px'>
+							<HashLink smooth to="/#aboutMe" className="link">About Me</HashLink>
+						<HashLink smooth to="/#projects" className="link">Commercial Projects</HashLink>
+						<HashLink smooth to="/#skills" className="link">Skills</HashLink>
 						</Flex>
 					</Flex>
 
@@ -69,11 +69,11 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 									mt="5px"
 									gap="10px"
 								>
-									<HashLink to="aboutMe" className='link'>About Me</HashLink>
-									<HashLink to="projects" className='link'>
+									<HashLink to="/#aboutMe" className='link'>About Me</HashLink>
+									<HashLink to="/#projects" className='link'>
 										Commercial Projects
 									</HashLink>
-									<HashLink to="skills" className='link'>Skills</HashLink>
+									<HashLink to="/#skills" className='link'>Skills</HashLink>
 								</Flex>
 							</Flex>
 							<IconButton
@@ -87,12 +87,12 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 
 						<Switch
 							id="Switch"
-							variant="#Switch"
 							pos="fixed"
 							top="20px"
 							right="10px"
-							// colorScheme={colorSwitch}
+							// colorScheme='black'
 							// color={colorSwitch}
+							// bgColor={colorSwitch}
 							size="lg"
 							isChecked={isDark}
 							onChange={toggleColorMode}
