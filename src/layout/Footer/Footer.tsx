@@ -1,4 +1,4 @@
-import { Flex, Grid, Container, Text } from "@chakra-ui/react";
+import { Flex, Grid, Container, Text, Box } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 
 import { Link } from "react-router-dom";
@@ -6,12 +6,15 @@ import Cursor from './../Cursor/Cursor';
 
 const Footer = () => {
 	const color = useColorModeValue("#0a0a0a", "#8b00ff");
+	const bgColor = useColorModeValue("rgba(212,212,212,0.5)", "rgba(122,122,122,0.4)");
 
 	return (<>
 		<footer>
 			<Container
 				maxW={{ lg: "1440px" }}
 				borderTop={`1px solid #8b00ff`}
+				className="container"
+				backgroundColor={bgColor}
 			>
 				<Grid
 					m="0 auto"
@@ -88,11 +91,9 @@ const Footer = () => {
 				</Grid>
 			</Container>
 		</footer>
-		<Cursor/>
-  
-  </>
-
-  );
+		<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}><Cursor /></Box> 
+	</>
+	);
 };
 
 export default Footer;
