@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 // import './App.css';
+import { CursorFire } from './CursorFire';
 
 const Cursor = () => {
 	const delay = 18;
@@ -109,9 +110,8 @@ const Cursor = () => {
 	return (
 		<>
 			<div ref={dotOutline} className="cursor-dot-outline">
-				<div className="cursor-dot-outline2-wrap">
-					<div className="cursor-dot-outline2"></div>
-				</div>
+				<div className='circle'></div>
+				<CursorFire/>
 			</div>
 			<div ref={dot} className="cursor-dot">
 				<div className="cursor-dot2"></div>
