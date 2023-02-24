@@ -1,3 +1,10 @@
+:root {
+  --size: 20vh;
+  --s: calc(var(--size) / 6);
+  --bor: calc(var(--size) / 30);
+  --boxShadow: calc(var(--size) / 12);
+}
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -91,30 +98,37 @@ a {
 	animation: color-blink 5s infinite;
 }
 
-
-
 .cursor-dot-outline {
 	width: 40px;
 	height: 40px;
 	filter: blur(1px);
 }
 
-.cursor-dot-outline2-wrap {
+/* .cursor-dot-outline2-wrap {
 	position: relative;
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+	border-radius: 50%; 
 	outline: 2px solid white;
 }
 
-.cursor-dot-outline2 {
+.cursor-dot-outline2-wrap .circle{
 	width: 40px;
+	height: 40px;
+}
+.cursor-dot-outline2-wrap svg{
+	width: 40px;
+	height: 40px;
+} */
+
+.cursor-dot-outline2 {
+	/* width: 40px;
 	height: 40px;
 	padding: 10px;
 	border-radius: 50%;
 	outline: 2px solid white;
 	position: absolute;
-	animation: color-blink 5s infinite;
+	animation: color-blink 5s infinite; */
 }
 
 @keyframes color-blink {
@@ -183,7 +197,6 @@ p, span, h3 {
 	text-shadow: 0px 0px 10px #ff0048, 0px 0px 20px #ff0088, 0px 0px 30px #8b00ff, 0px 0px 40px #8b00ff, 0px 0px 50px #8b00ff;
 }
 
-
 h2.theme-dark {
 	color: #fff;
 	text-shadow: 0px 0px 10px #78E0F2, 0px 0px 20px #78E0F2, 0px 0px 30px #78E0F2, 0px 0px 40px #78E0F2, 0px 0px 50px #78E0F2;
@@ -232,3 +245,63 @@ a img:not(:hover, :focus) {
 	fill: white;
 }
 
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size);
+  height: var(--size);
+  filter: url(#wavy) blur(1px);
+}
+
+.circle:before,
+.circle:after {
+  content: "";
+  position: absolute;
+  top: var(--s);
+  left: var(--s);
+  right: var(--s);
+  bottom: var(--s);
+  border-radius: 50%;
+  border: var(--bor) solid #fff;
+}
+.circle:before {
+  box-shadow: 0 0 var(--boxShadow) #0f0, inset 0 0 var(--boxShadow) #0f0;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0002);
+  animation: move 5s linear infinite;
+}
+
+.circle:after {
+  box-shadow: 0 0 calc(var(--bor)/2) #fff, inset 0 0 var(--bor) #fff;
+}
+
+@keyframes move {
+  0% {
+    box-shadow: 0 0 var(--boxShadow) #0f0, inset 0 0 var(--boxShadow) #0f0;
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    box-shadow: 0 0 60px #0f0, inset 0 0 60px #0f0;
+  }
+
+  40% {
+    box-shadow: 0 0 40px #0f0, inset 0 0 40px #0f0;
+  }
+  60% {
+    box-shadow: 0 0 80px #0f0, inset 0 0 80px #0f0;
+  }
+  80% {
+    box-shadow: 0 0 100px #0f0, inset 0 0 100px #0f0;
+  }
+  100% {
+    box-shadow: 0 0 var(--boxShadow) #0f0, inset 0 0 var(--boxShadow) #0f0;
+    filter: hue-rotate(360deg);
+  }
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
