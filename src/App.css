@@ -300,8 +300,8 @@ a img:not(:hover, :focus) {
     filter: hue-rotate(360deg);
   }
 }
-
+/* 
 svg {
   width: 0;
   height: 0;
-}
+} */
