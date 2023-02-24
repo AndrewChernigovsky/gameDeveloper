@@ -10,7 +10,7 @@ const Skills = () => {
                 maxW={{ lg: '1440px' }}
                 fontWeight={600}
                 mb="20px"
-                paddingTop='100px'
+				paddingTop='100px'
             >
                 <Box
                     display='flex'

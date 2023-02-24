@@ -14,12 +14,15 @@ const breakpoints = {
 
 export const Darktheme = extendTheme({
 	breakpoints,
-	fonts,
 	colors: {
 		dark: {
 			res: '#07035a',
 			white: '#001230'
 		}
+	},
+	fonts: {
+		heading: `'Roboto', sans-serif`,
+		body: `'Roboto', sans-serif`,
 	},
 	config: {
 		disableTransitionOnChange: false
@@ -27,34 +30,13 @@ export const Darktheme = extendTheme({
 	styles: {
 		global: (props: any) => ({
 			body: {
-				fontFamily: "body",
-				color: mode("#0a0a0a", "#8b00ff")(props),
-				bg: mode("#FFC500", "#0a0a0a")(props),
+				// fontFamily: "body",
+				// color: mode("#0a0a0a", "#8b00ff")(props),
+				bg: mode("#", "#")(props),
 				lineHeight: "base",
 			},
 		}),
 	},
 	components: {
-		Switch: {
-			variants: {
-				"with-shadow": {
-					bg: "red.400",
-					boxShadow: "0 0 2px 2px #efdfde",
-				},
-
-				'#Switch': (props: any) => ({
-					backgroundColor: mode("blue", "yellow")(props),
-					bg: mode("blue", "yellow")(props),
-					color: mode("gray.800", "whiteAlpha.900")(props),
-				}),
-
-				// baseStyle: (colorMode: any ) => {
-				// 	return {
-				// 		color: colorMode === 'dark' ? 'red.300' : 'blue.300',
-				// 		fontWeight: 'normal',
-				// 	};
-				// },
-			},
-		}
 	}
 })
