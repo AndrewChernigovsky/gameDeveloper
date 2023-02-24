@@ -1,4 +1,4 @@
-import { Flex, Grid, Container, Text } from "@chakra-ui/react";
+import { Flex, Grid, Container, Text, Box } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 
 import { Link } from "react-router-dom";
@@ -88,8 +88,7 @@ const Footer = () => {
 				</Grid>
 			</Container>
 		</footer>
-		<Cursor/>
-  
+		<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}><Cursor /></Box> 
   </>
 
   );
