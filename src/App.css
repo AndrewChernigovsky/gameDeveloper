@@ -23,18 +23,30 @@ html {
 
 body {
 	font-family: "Roboto-Medium", "Arial", sans-serif;
-	cursor: none;
 	position: relative;
 	min-height: inherit;
-	background: url('./../src/images/OwnBackgroundImage.jpg') repeat center center;
+	background: url('./../src/images/OwnBackgroundImage-mobile.webp'), url('./../src/images/OwnBackgroundImage-mobile.jpg') repeat center center;
 	background-size: contain;
 }
+
+
+@media screen and(min-width: 768px) {
+	body {
+		background: url('./../src/images/OwnBackgroundImage.webp'), url('./../src/images/OwnBackgroundImage.jpg') repeat center center;
+	}
+}
+
+
  /* radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(33,31,32,1) 10%) */
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
 
+
+.intro-section {
+	display: none;
 }
 
 .container {
@@ -52,8 +64,6 @@ body {
 
 .main {
 	flex: 1 0 auto;
-
-
 }
 
 .footer {
@@ -336,11 +346,10 @@ a img:not(:hover, :focus) {
 	border: 2px solid pink;
 }
 
-
-
 .css-p27qcy:not([data-theme]) {
 	background-color: #8b00ff;
 	border: 2px solid pink;
+	cursor: none;
 }
 .css-p27qcy:not([data-theme]) span{
 	background-color: transparent;
