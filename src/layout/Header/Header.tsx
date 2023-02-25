@@ -83,6 +83,7 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 							aria-label="Open Menu"
 							size="lg"
 							mr={2}
+							right="70px"
 							icon={<HamburgerIcon />}
 							display={['flex', 'flex', 'none', 'none']}
 							onClick={() => changeDisplay('flex')}
