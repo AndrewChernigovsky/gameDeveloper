@@ -20,7 +20,7 @@ function App() {
 	const isDark = colorMode === 'dark';
 
 	return (
-		<div className="wrapper">
+		<div className={`${isDark ? "wrapper-dark" :  " wrapper-ligth"  }`}>
 			<div className="container">
 				<Header
 					toggleColorMode={toggleColorMode}
@@ -37,7 +37,7 @@ function App() {
 
 			</div>
 
-			<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}>
+			<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]} className={`${isDark ? 'dark-theme' : ''}`}>
 				<Cursor /></Box> 
 		</div>
 	);

@@ -8,7 +8,6 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-	cursor: none;
 }
 
 html,
@@ -25,12 +24,16 @@ body {
 	font-family: "Roboto-Medium", "Arial", sans-serif;
 	position: relative;
 	min-height: inherit;
-	background: url('./../src/images/OwnBackgroundImage-mobile.webp'), url('./../src/images/OwnBackgroundImage-mobile.jpg') repeat center center;
 	background-size: contain;
 }
 
+@media screen and (min-width: 320px) {
+	body {
+		background: url('./../src/images/OwnBackgroundImage-mobile.webp'), url('./../src/images/OwnBackgroundImage-mobile.jpg') repeat center center;
+	}
+}
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
 	body {
 		background: url('./../src/images/OwnBackgroundImage.webp'), url('./../src/images/OwnBackgroundImage.jpg') repeat center center;
 	}
@@ -38,7 +41,13 @@ body {
 
 
  /* radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(33,31,32,1) 10%) */
-.wrapper {
+.wrapper-dark {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	cursor: none;
+}
+.wrapper-light {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -46,7 +55,7 @@ body {
 
 
 .intro-section {
-	display: none;
+	/* display: none; */
 }
 
 .container {
@@ -349,9 +358,31 @@ a img:not(:hover, :focus) {
 .css-p27qcy:not([data-theme]) {
 	background-color: #8b00ff;
 	border: 2px solid pink;
+	-webkit-box-shadow: 4px 3px 14px 0px rgba(139, 0, 255, 0.2);
+	-moz-box-shadow: 4px 3px 14px 0px rgba(139, 0, 255, 0.2);
+	box-shadow: 4px 3px 14px 0px rgba(139, 0, 255, 0.2);
+	cursor: pointer;
+}
+
+.dark-theme .css-p27qcy:not([data-theme]) {
 	cursor: none;
 }
+
 .css-p27qcy:not([data-theme]) span{
 	background-color: transparent;
 	border: 2px solid pink;
+}
+
+.dark-theme >* a {
+	color: black;
+	text-shadow: none;
+}
+
+.wrapper-dark >* p, 
+.wrapper-dark >* h1,
+.wrapper-dark >* h2,
+.wrapper-dark >* h3,
+.wrapper-dark >* span {
+	color: black;
+	text-shadow: none;
 }

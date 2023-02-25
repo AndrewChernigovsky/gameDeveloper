@@ -8,7 +8,7 @@ interface IModeTheme {
 const About = ({isDark}: IModeTheme) => {
 	return (
 		<Box className="about-section" pt={100} m='0 auto'>
-			<Heading className={`${isDark ? 'theme-ligth' :  'theme-dark'}`} as='h2' size={["xl", "2xl", "3xl", "4xl"]} textAlign='center' mb='30px'>ABOUT</Heading>
+			<Heading as='h2' size={["xl", "2xl", "3xl", "4xl"]} textAlign='center' mb='30px'>ABOUT</Heading>
 			<Container
 				display={["block", "block", "block", "flex"]}
 				justifyContent="space-between"
