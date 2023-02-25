@@ -92,8 +92,11 @@ const Cursor = () => {
 		cursorVisible.current = true;
 		toggleCursorVisibility();
 
-		endX.current = e.pageX - 230;
+		endX.current = e.pageX;
 		endY.current = e.pageY;
+
+		console.log(e.pageX, 'e.PageX: xx')
+		console.log(windowInnerWidth, 'width: xx')
 
 		if (dot.current !== null && dotOutline.current !== null) {
 			dot.current.style.top = endY.current + 'px';

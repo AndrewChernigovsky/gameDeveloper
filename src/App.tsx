@@ -3,7 +3,9 @@ import HomePage from "./pages/HomePage/Homepage";
 import Footer from "./layout/Footer/Footer";
 import "./App.css";
 
-import { background, useColorMode } from "@chakra-ui/react";
+import { background, useColorMode, Box } from "@chakra-ui/react";
+
+import Cursor from './layout/Cursor/Cursor';
 
 import Project1 from './Content/Portfolio/project1'
 import Project2 from './Content/Portfolio/project2'
@@ -32,9 +34,11 @@ function App() {
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 				<Footer />
-			</div>
-			
 
+			</div>
+
+			<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}>
+				<Cursor /></Box> 
 		</div>
 	);
 }
