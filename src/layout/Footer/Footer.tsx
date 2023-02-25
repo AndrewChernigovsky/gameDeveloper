@@ -91,7 +91,8 @@ const Footer = () => {
 				</Grid>
 			</Container>
 		</footer>
-		<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}><Cursor /></Box> 
+		<Box display={['none', 'none', 'none', 'none', 'none', 'block', 'block',]}>
+			<Cursor /></Box> 
 	</>
 	);
 };

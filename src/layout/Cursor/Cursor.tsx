@@ -15,9 +15,8 @@ const Cursor = () => {
 	const cursorEnglared = useRef(false);
 
 	const windowInnerWidth = window.innerWidth;
-	// const windowScreenHeigth = window.screen.height;
 
-	const endX = useRef(window.innerWidth / 2);
+	const endX = useRef(window.innerWidth / 4);
 	const endY = useRef(window.innerHeight / 2);
 	const _x = useRef(0);
 	const _y = useRef(0);
@@ -93,8 +92,9 @@ const Cursor = () => {
 		cursorVisible.current = true;
 		toggleCursorVisibility();
 
-		endX.current = e.pageX;
+		endX.current = e.pageX - 230;
 		endY.current = e.pageY;
+
 		if (dot.current !== null && dotOutline.current !== null) {
 			dot.current.style.top = endY.current + 'px';
 			dot.current.style.left = endX.current + 'px';
@@ -105,6 +105,7 @@ const Cursor = () => {
 		_x.current += (endX.current - _x.current) / delay;
 		_y.current += (endY.current - _y.current) / delay;
 
+	
 		if (dot.current !== null && dotOutline.current !== null) {
 			dotOutline.current.style.top = _y.current + 'px';
 			dotOutline.current.style.left = _x.current + 'px';
@@ -121,24 +122,11 @@ const Cursor = () => {
 		}
 	}
 
-	// if (windowScreenHeigth < _y.current && body) {
-	// 	body.style.overflowY = 'hidden'
-	// 	_y.current = windowScreenHeigth 
-
-	// } else {
-	// 	if (body) {
-	// 		body.style.overflowY = 'auto'
-	// 	}
-	// }
-
-	// console.log(windowScreenHeigth)
-	// console.log(_y.current)
-
 	return (
 		<>
 			<div ref={dotOutline} className="cursor-dot-outline">
 				<div className='circle'></div>
-				<CursorFire/>
+				<CursorFire  />
 			</div>
 			<div ref={dot} className="cursor-dot">
 				<div className="cursor-dot2"></div>

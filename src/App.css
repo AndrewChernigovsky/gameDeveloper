@@ -8,7 +8,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-	cursor: none;
+	/* cursor: none; */
 }
 
 html,
@@ -23,7 +23,6 @@ html {
 
 body {
 	font-family: "Roboto-Medium", "Arial", sans-serif;
-	cursor: none;
 	position: relative;
 	min-height: inherit;
 	background: url('./../src/images/OwnBackgroundImage.jpg') repeat center center;
@@ -336,11 +335,10 @@ a img:not(:hover, :focus) {
 	border: 2px solid pink;
 }
 
-
-
 .css-p27qcy:not([data-theme]) {
 	background-color: #8b00ff;
 	border: 2px solid pink;
+	cursor: none;
 }
 .css-p27qcy:not([data-theme]) span{
 	background-color: transparent;
