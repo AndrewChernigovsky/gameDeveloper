@@ -137,8 +137,7 @@ const Cursor = () => {
 				<CursorFire  />
 			</div>
 			<div ref={dot} className="cursor-dot">
-				<div className="cursor-dot2">
-				</div>
+				<div className="cursor-dot2"></div>
 			</div>
 		</>
 	);
