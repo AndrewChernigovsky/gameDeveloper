@@ -2,11 +2,10 @@ import { Flex, Text, Box, Heading, Container, useColorModeValue } from '@chakra-
 import { Prism, Knowledge, Design } from './images';
 
 const Skills = () => {
-    const skillsBg = useColorModeValue('black', 'white')
     const skillsColor = useColorModeValue('#FFFFFF', '#000000')
 
     return (
-        <section id="skills">
+    <section id="skills">
             <Container
                 maxW={{ lg: '1440px' }}
                 fontWeight={600}
