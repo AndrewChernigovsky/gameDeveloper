@@ -317,7 +317,7 @@ a img:not(:hover, :focus) {
 	background-repeat: no-repeat;
 	background-size: contain;
 
-	animation: animaSonic 15s ease-in-out infinite;
+	animation: animaSonic 5s ease-in-out infinite;
 }
 
 .circle.circle-anima {
@@ -337,7 +337,7 @@ a img:not(:hover, :focus) {
 	background-repeat: no-repeat;
 	background-size: contain;
 
-	animation: animaEgg 10s ease-in-out infinite;
+	animation: animaEgg 5s ease-in-out infinite;
 }
 .dark-theme div .cursor-dot,
 .cursor-dot2 {
