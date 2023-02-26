@@ -471,6 +471,67 @@ a img:not(:hover, :focus) {
 .wrapper-dark > * h2,
 .wrapper-dark > * h3,
 .wrapper-dark > * span {
-	color: black;
+	color: rgb(255, 255, 255);
 	text-shadow: none;
+<<<<<<< HEAD
+=======
+}
+
+
+
+.wrapper-ligth .avatar img{
+	/* border: 5px solid #e600ff; */
+	/* -webkit-box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5);
+	-moz-box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5);
+	box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5); */
+}
+
+.wrapper-ligth .avatar{
+	border: 5px solid white;
+	-webkit-box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5);
+	box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5);
+}
+
+.avatar {
+	width: 450px;
+	/* height: 550px; */
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+
+	-webkit-box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5);
+	-moz-box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5);
+	box-shadow: 4px 3px 14px 0px rgba(252, 0, 143, 0.5);
+}
+
+.avatar img {
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 5px solid white;
+		/* -webkit-box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5);
+	box-shadow: 4px 3px 14px 0px rgba(255, 255, 255, 0.5); */
+}
+
+@media screen and (min-width: 320px) {
+	.avatar {
+
+	}
+
+	.avatar img {
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.avatar img {
+		width: 400px;
+	}
+}
+
+.about-section {
+	padding-bottom: 50px;
+>>>>>>> 563702147a6be044be303a624b3c8f357605ec20
 }

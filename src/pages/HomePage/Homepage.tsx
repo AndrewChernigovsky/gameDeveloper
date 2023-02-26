@@ -16,8 +16,8 @@ const HomePage = ({ isDark }: IModeTheme) => {
 			<IntroText />
 			<Skills />
 			<About isDark={isDark} />
-			<Advantages/>
-			<Portfolio />
+			{/* <Advantages/>
+			<Portfolio /> */}
 		</main>
 	);
 }
