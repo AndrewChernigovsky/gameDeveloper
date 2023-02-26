@@ -1,9 +1,8 @@
-interface propsSlider {
-  text: string;
+type propsSlider = {
   changeBackground: () => void;
 };
 
-const SliderItem = ({ text, changeBackground}: propsSlider) => {
+const SliderItem = ({ changeBackground }: propsSlider) => {
   return (
     <div
       className="slider-item"
@@ -16,7 +15,7 @@ const SliderItem = ({ text, changeBackground}: propsSlider) => {
       }}
       onClick={changeBackground}
     >
-      <h1 style={{ color: "blue", fontSize: "32px" }}>{text}</h1>
+      <h1 style={{ color: "purple", fontSize: "32px" }}>video</h1>
     </div>
   );
 };

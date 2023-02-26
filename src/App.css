@@ -61,7 +61,7 @@ body {
 }
 
 .intro-section {
-	display: none;
+	/* display: none; */
 }
 
 .container {
@@ -473,8 +473,6 @@ a img:not(:hover, :focus) {
 .wrapper-dark > * span {
 	color: rgb(255, 255, 255);
 	text-shadow: none;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -533,5 +531,4 @@ a img:not(:hover, :focus) {
 
 .about-section {
 	padding-bottom: 50px;
->>>>>>> 563702147a6be044be303a624b3c8f357605ec20
 }
