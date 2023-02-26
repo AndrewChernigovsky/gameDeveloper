@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 // import './App.css';
 import { CursorFire } from './CursorFire';
 
@@ -114,7 +114,9 @@ const Cursor = () => {
 			dotOutline.current.style.left = _x.current + 'px';
 		}
 
+		
 		requestRef.current = requestAnimationFrame(animateDotOutLine);
+
 	};
 
 	if (windowInnerWidth > _x.current && body) {
@@ -125,6 +127,9 @@ const Cursor = () => {
 		}
 	}
 
+	const [anima, setAnima] = useState(false);
+	cursorVisible.current = anima
+
 	return (
 		<>
 			<div ref={dotOutline} className="cursor-dot-outline">
@@ -132,7 +137,8 @@ const Cursor = () => {
 				<CursorFire  />
 			</div>
 			<div ref={dot} className="cursor-dot">
-				<div className="cursor-dot2"></div>
+				<div className="cursor-dot2">
+				</div>
 			</div>
 		</>
 	);

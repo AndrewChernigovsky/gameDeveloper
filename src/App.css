@@ -123,19 +123,25 @@ a {
 }
 
 .cursor-dot {
-	width: 8px;
-	height: 8px;
-	background-color: white;
+	width: 50px;
+	height: 50px;
+	/* background-color: white;
+	
 	filter: blur(1px);
-	animation: color-blink1 2s infinite;
+	animation: color-blink1 2s infinite; */
+	background-image: url('./images/content/cursor/CloudyDeliciousHagfish-size_restricted.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
 }
 
 .cursor-dot2 {
-	width: 8px;
-	height: 8px;
-	background-color: white;
+	/* width: 8px;
+	height: 8px; */
+	/* background-color: white;
 	filter: blur(1px);
-	animation: color-blink 5s infinite;
+	animation: color-blink 5s infinite; */
+	
 }
 
 .cursor-dot-outline {
@@ -286,16 +292,34 @@ a img:not(:hover, :focus) {
 }
 
 .circle {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: var(--size);
-  height: var(--size);
-  filter: url(#wavy) blur(1px);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* width: var(--size);
+	height: var(--size);
+	filter: url(#wavy) blur(1px); */
+	width: 100px;
+	height: 100px;
+	/* background-color: white;
+	filter: blur(1px);
+	animation: color-blink1 2s infinite; */
+	background-image: url('./images/content/cursor/nvxAFsa.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 150px; 
 }
 
-.circle:before,
+.circle.circle-anima {
+	width: 100px;
+	height: 100px;
+	background-image: url('./images/content/cursor/nvxAFsa.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70px; 
+}
+
+/* .circle:before,
 .circle:after {
   content: "";
   position: absolute;
@@ -311,13 +335,13 @@ a img:not(:hover, :focus) {
   -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, #0002);
   animation: move 5s linear infinite;
-}
+} */
 
-.circle:after {
+/* .circle:after {
   box-shadow: 0 0 calc(var(--bor)/2) #fff, inset 0 0 var(--bor) #fff;
-}
+} */
 
-@keyframes move {
+/* @keyframes move {
   0% {
     box-shadow: 0 0 var(--boxShadow) #0f0, inset 0 0 var(--boxShadow) #0f0;
     filter: hue-rotate(0deg);
@@ -344,7 +368,7 @@ a img:not(:hover, :focus) {
 .circle + svg {
   width: 0;
   height: 0;
-}
+} */
 
 .css-p27qcy[data-checked]:not([data-theme]) {
 	background-color: black;
