@@ -15,12 +15,10 @@ interface IModeTheme {
 const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
 	const color = useColorModeValue('#8b00ff', '#000080');
-	const colorHeader = useColorModeValue(' #0a0a0a ', '8b00ff');
-	// const colorSwitch = useColorModeValue('#000080', '#8b00ff');
-
+	const colorHeader = useColorModeValue(' #0a0a0a ', '#FFCC50');
 
 	return (
-		<header style={{ backgroundColor: colorHeader, minHeight: '70px', position: 'fixed', minWidth: '100%', borderBottom: `1px solid ${color}`, color: color, zIndex: 551, left: '0' }}>
+		<header style={{ backgroundColor: colorHeader, minHeight: '70px', position: 'fixed', top: '0', minWidth: '100%', borderBottom: `1px solid ${color}`, color: color, zIndex: 551, left: '0' }} className={`${isDark ? 'dark-theme' : ''}`}>
 
 			<Container maxW='1440px' fontWeight={600}>
 				<Flex>
@@ -94,9 +92,6 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 							top="20px"
 							right="10px"
 							position="absolute"
-							// colorScheme='black'
-							// color={colorSwitch}
-							// bgColor={colorSwitch}
 							size="lg"
 							isChecked={isDark}
 							onChange={toggleColorMode}

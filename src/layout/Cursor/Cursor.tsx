@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 // import './App.css';
 import { CursorFire } from './CursorFire';
 
@@ -114,7 +114,9 @@ const Cursor = () => {
 			dotOutline.current.style.left = _x.current + 'px';
 		}
 
+		
 		requestRef.current = requestAnimationFrame(animateDotOutLine);
+
 	};
 
 	if (windowInnerWidth > _x.current && body) {
@@ -124,6 +126,9 @@ const Cursor = () => {
 			body.style.overflowX = 'auto'
 		}
 	}
+
+	const [anima, setAnima] = useState(false);
+	cursorVisible.current = anima
 
 	return (
 		<>
