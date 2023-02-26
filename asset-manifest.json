@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/gameDeveloper/static/css/main.5f8cd952.css",
-    "main.js": "/gameDeveloper/static/js/main.206b5e06.js",
+    "main.css": "/gameDeveloper/static/css/main.79a33107.css",
+    "main.js": "/gameDeveloper/static/js/main.13df8a90.js",
     "static/js/787.44bd52ee.chunk.js": "/gameDeveloper/static/js/787.44bd52ee.chunk.js",
+    "static/media/sega-the-death-egg.gif": "/gameDeveloper/static/media/sega-the-death-egg.c5beaa9fb6e02ece7051.gif",
     "static/media/project1P1440px@4x.webp": "/gameDeveloper/static/media/project1P1440px@4x.e26592d8e5b3e88a2a94.webp",
     "static/media/project2P1440px@4x.webp": "/gameDeveloper/static/media/project2P1440px@4x.aad86f37c5d074810144.webp",
     "static/media/OwnBackgroundImage.jpg": "/gameDeveloper/static/media/OwnBackgroundImage.6b9db55ab3374c12a408.jpg",
@@ -14,6 +15,7 @@
     "static/media/project1P768px@4x.webp": "/gameDeveloper/static/media/project1P768px@4x.cb567b3f0e48b63b6c6b.webp",
     "static/media/project2P768px@4x.webp": "/gameDeveloper/static/media/project2P768px@4x.386e79eaf99bcbbfab25.webp",
     "static/media/project3P768px@4x.webp": "/gameDeveloper/static/media/project3P768px@4x.52514d8ae7e9f0dfe450.webp",
+    "static/media/CloudyDeliciousHagfish-size_restricted.gif": "/gameDeveloper/static/media/CloudyDeliciousHagfish-size_restricted.999e1370dac712b7f050.gif",
     "static/media/project1P1024px@2x.webp": "/gameDeveloper/static/media/project1P1024px@2x.eb93adcdafa55924f5bc.webp",
     "static/media/Roboto-MediumItalic.ttf": "/gameDeveloper/static/media/Roboto-MediumItalic.82736aaa11c64709055f.ttf",
     "static/media/Roboto-LightItalic.ttf": "/gameDeveloper/static/media/Roboto-LightItalic.c590382422f2742d788b.ttf",
@@ -31,6 +33,7 @@
     "static/media/project3P480px@4x.webp": "/gameDeveloper/static/media/project3P480px@4x.bd939a8d7c421211d6f9.webp",
     "static/media/project1P320px@4x.webp": "/gameDeveloper/static/media/project1P320px@4x.fde21d9f516bfb70a36c.webp",
     "static/media/project3P320px@1x.png": "/gameDeveloper/static/media/project3P320px@1x.a51657079703bfe53ec4.png",
+    "static/media/ZU4S.gif": "/gameDeveloper/static/media/ZU4S.0e81c3f850372177a534.gif",
     "static/media/project2P320px@1x.png": "/gameDeveloper/static/media/project2P320px@1x.89b400f3842f144d3963.png",
     "static/media/project2P768px@2x.webp": "/gameDeveloper/static/media/project2P768px@2x.08273063ac72793f9706.webp",
     "static/media/project3P768px@2x.webp": "/gameDeveloper/static/media/project3P768px@2x.710119ed25fd294afafb.webp",
@@ -47,6 +50,7 @@
     "static/media/project1P480px@2x.webp": "/gameDeveloper/static/media/project1P480px@2x.938c7d5d99746b5a7943.webp",
     "static/media/OwnBackgroundImage-mobile.jpg": "/gameDeveloper/static/media/OwnBackgroundImage-mobile.83d23dea6c7eba6a6c86.jpg",
     "static/media/OwnBackgroundImage-mobile.webp": "/gameDeveloper/static/media/OwnBackgroundImage-mobile.bc6599bf65bd22ffba87.webp",
+    "static/media/dr-eggman-doctor-eggman.gif": "/gameDeveloper/static/media/dr-eggman-doctor-eggman.d66aa4bead7eaf813487.gif",
     "static/media/project1P768px@1x.webp": "/gameDeveloper/static/media/project1P768px@1x.7371430f41d0dc6163a0.webp",
     "static/media/project3P1024px@1x.webp": "/gameDeveloper/static/media/project3P1024px@1x.c344073742886f3e2432.webp",
     "static/media/project2P1024px@1x.webp": "/gameDeveloper/static/media/project2P1024px@1x.8fdd05b202cf6ffa468b.webp",
@@ -68,12 +72,12 @@
     "static/media/project2P320px@1x.webp": "/gameDeveloper/static/media/project2P320px@1x.d543f33f4324b5a3db09.webp",
     "static/media/avatar320px.webp": "/gameDeveloper/static/media/avatar320px.96c000be40ef21452044.webp",
     "index.html": "/gameDeveloper/index.html",
-    "main.5f8cd952.css.map": "/gameDeveloper/static/css/main.5f8cd952.css.map",
-    "main.206b5e06.js.map": "/gameDeveloper/static/js/main.206b5e06.js.map",
+    "main.79a33107.css.map": "/gameDeveloper/static/css/main.79a33107.css.map",
+    "main.13df8a90.js.map": "/gameDeveloper/static/js/main.13df8a90.js.map",
     "787.44bd52ee.chunk.js.map": "/gameDeveloper/static/js/787.44bd52ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f8cd952.css",
-    "static/js/main.206b5e06.js"
+    "static/css/main.79a33107.css",
+    "static/js/main.13df8a90.js"
   ]
 }
