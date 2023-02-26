@@ -5,8 +5,8 @@ import { Box } from '@chakra-ui/react';
 import './Advantages.css';
 
 const Advantages = () => {
-	const color = useColorModeValue('red', 'blue');
-		
+	const color = useColorModeValue("#8b00ff ", "rgb(255, 204, 80)");
+
 	return (
 		<section style={{ paddingTop: '100px' }} id='advantages'>
 			<Container maxW={{ lg: '1440px' }} fontWeight={600} mb="20px">
