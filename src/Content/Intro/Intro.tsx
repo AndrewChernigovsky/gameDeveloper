@@ -1,40 +1,22 @@
 import { Box } from "@chakra-ui/react";
-import { useState } from "react";
-// import videoWebm from './../../videos/intro-video';
-// import videoMp4 from "./../../videos/intro-video";
+import { useState, useEffect } from "react";
+import video from "./intro-video.mp4";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderItem from "./SliderItem";
 
-const sliderItemHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
-  event.preventDefault();
-
-  const button: HTMLButtonElement = event.currentTarget;
-  // setClickedButton(button.name);
-};
-
 const Intro = () => {
+  const [videoContent, setVideoContent] = useState(video);
+  console.log("render videoooooo");
 
-  const [videoContent, setVideoContent] = useState('hello')
-
-const changeBackground = () => {
-  setVideoContent('')
-}
+  useEffect(() => {
+    console.log("state changed!");
+    setVideoContent("путь до видео");
+  }, [videoContent]);
 
   return (
     <Box className="intro-section" mt="100px">
-      {/* <video muted autoPlay loop preload="auto">
-				 <source src={videoWebm} type="video/webm" />
-
-				<source src={videoMp4} type="video/mp4" />
-
-				<source src="../assets/intro-video.ogv" type="video/ogv" />
-				
-			<track kind=”captions” src=”sampleCaption_he.vtt” scrlang=”he”/>
-				<p>Если вы видите эту надпись, значит ваш браузер не поддерживает видео HTML5. Sorry, your browser doesn't support videos. </p>
-			</video> */}
-
       <div
         className="video-block"
         style={{
@@ -43,23 +25,33 @@ const changeBackground = () => {
           border: "1px solid black",
           background: "rgba(0, 0, 0, 0.8)",
           marginBottom: "50px",
+          color: "white",
+          fontSize: "32px",
+          margin: '0 auto'
         }}
       >
-		{videoContent}
+        <video
+          style={{ height: "100%", border: "3px solid red" }}
+          autoPlay
+          muted
+          loop
+        >
+          <source src={videoContent} />
+        </video>
       </div>
 
       <Swiper
         className="intro-slider"
-        style={{ width: "auto", height: "80vh", display: "flex" }}
+        style={{ maxWidth: "100vw", height: "80vh", display: "flex" }}
         breakpoints={{
           320: {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
           1440: {
             slidesPerView: 4,
@@ -67,35 +59,41 @@ const changeBackground = () => {
         }}
       >
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="1" />
+          <SliderItem
+            changeBackground={() =>
+              setVideoContent(
+                "https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+              )
+            }
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="2" />
+          <SliderItem changeBackground={() => setVideoContent("2")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="3" />
+          <SliderItem changeBackground={() => setVideoContent("3")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="4" />
+          <SliderItem changeBackground={() => setVideoContent("4")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="5" />
+          <SliderItem changeBackground={() => setVideoContent("5")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="6" />
+          <SliderItem changeBackground={() => setVideoContent("6")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="7" />
+          <SliderItem changeBackground={() => setVideoContent("7")} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={changeBackground} text="8" />
+          <SliderItem changeBackground={() => setVideoContent("8")} />
         </SwiperSlide>
       </Swiper>
     </Box>

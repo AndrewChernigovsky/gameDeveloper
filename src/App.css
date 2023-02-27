@@ -27,6 +27,11 @@ body {
 			url('./../src/images/OwnBackgroundImage-mobile.jpg') repeat center
 				center;
 	}
+
+	.icon-wrapper>* {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -47,8 +52,8 @@ body {
 	min-height: 100vh;
 }
 
-#projects, .intro-section {
-	display: none;
+.intro-section {
+	/* display: none; */
 }
 
 .container {

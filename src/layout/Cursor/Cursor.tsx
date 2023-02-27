@@ -95,8 +95,8 @@ const Cursor = () => {
 		endX.current = e.pageX;
 		endY.current = e.pageY;
 
-		console.log(e.pageX, 'e.PageX: xx')
-		console.log(windowInnerWidth, 'width: xx')
+		// console.log(e.pageX, 'e.PageX: xx')
+		// console.log(windowInnerWidth, 'width: xx')
 
 		if (dot.current !== null && dotOutline.current !== null) {
 			dot.current.style.top = endY.current + 'px';
