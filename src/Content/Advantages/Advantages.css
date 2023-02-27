@@ -1,3 +1,13 @@
+.advantages {
+	justify-items: center;
+}
+
+.advantages svg {
+	width: 100px;
+	height: 100px;
+	fill: white;
+}
+
 .advantages-icons {
 	display: grid;
 	gap: 20px;

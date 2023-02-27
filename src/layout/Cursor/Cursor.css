@@ -1,0 +1,85 @@
+.cursor-dot,
+.cursor-dot-outline {
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	opacity: 1;
+	z-index: 11111;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+	width: 50px;
+	height: 50px;
+	background-image: url('./../../images/content/cursor/CloudyDeliciousHagfish-size_restricted.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+}
+.cursor-dot-outline {
+	width: 40px;
+	height: 40px;
+}
+
+.circle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	background-image: url('./../../images/content/cursor/nvxAFsa.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: animaSonic 5s ease-in-out infinite;
+}
+
+.dark-theme div .circle {
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: animaEgg 5s ease-in-out infinite;
+}
+.dark-theme div .cursor-dot,
+.cursor-dot2 {
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@keyframes animaEgg {
+	0% {
+		background-image: url('./../../images/content/cursor/sega-the-death-egg.gif');
+	}
+	50% {
+		background-image: url('./../../images/content/cursor/dr-eggman-doctor-eggman.gif');
+	}
+
+	100% {
+		background-image: url('./../../images/content/cursor/sega-the-death-egg.gif');
+	}
+}
+
+@keyframes animaSonic {
+	0% {
+		background-image: url('./../../images/content/cursor/ZU4S.gif');
+	}
+
+	50% {
+		background-image: url('./../../images/content/cursor/nvxAFsa.gif');
+		width: 150px;
+		height: 150px;
+	}
+
+	100% {
+		background-image: url('./../../images/content/cursor/ZU4S.gif');
+	}
+}

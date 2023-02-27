@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
-// import './App.css';
-import { CursorFire } from './CursorFire';
+import './Cursor.css';
+// import { CursorFire } from './CursorFire';
 
 const Cursor = () => {
 
@@ -134,7 +134,6 @@ const Cursor = () => {
 		<>
 			<div ref={dotOutline} className="cursor-dot-outline">
 				<div className='circle'></div>
-				<CursorFire  />
 			</div>
 			<div ref={dot} className="cursor-dot">
 				<div className="cursor-dot2"></div>

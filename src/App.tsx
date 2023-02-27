@@ -13,6 +13,8 @@ import Project3 from './Content/Portfolio/project3'
 
 import NotFoundPage from './pages/NotFoundPage'
 
+import AboutMePage  from './pages/AboutMePage/AboutMePage'
+
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
 				/>
 				<Routes>
 					<Route path="/" element={<HomePage isDark={isDark} />} />
+					<Route path="/about" element={<AboutMePage isDark={isDark} />} />
 					<Route path="/project1" element={<Project1 />} />
 					<Route path="/project2" element={<Project2 />} />
 					<Route path="/project3" element={<Project3 />} />
