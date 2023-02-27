@@ -1,0 +1,22 @@
+.aboutMe-wrapper >* ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+.aboutMe-wrapper >* a {
+	font-weight: 600;
+	text-decoration: underline;
+}
+.aboutMe-wrapper >* a:hover {
+	opacity: 0.6;
+}
+.aboutMe-wrapper >* h3 {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.aboutMe-wrapper .aboutMe-text {
+	margin-bottom: 40px;
+}
+.aboutMe-avatar {
+    display: flex;
+    justify-content: flex-start;
+}

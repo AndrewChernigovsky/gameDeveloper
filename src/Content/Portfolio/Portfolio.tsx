@@ -5,7 +5,7 @@ import { images } from './images';
 
 const Portfolio = () => {
 	return (
-		<section style={{ paddingTop: '100px' }} id='projects'>
+		<section id='projects'>
 			<Container  maxW={{ lg: '1440px' }} fontWeight={600} mb="20px">
 				<Heading as="h2" size={["xl", "2xl", "3xl", "4xl"]} mb="30px" textAlign="center" textTransform="uppercase">Commercial Projects</Heading>
 				<Grid gap="20px" textAlign="center" justifyContent="center">

@@ -8,7 +8,7 @@ const Advantages = () => {
 	const color = useColorModeValue("#8b00ff ", "rgb(255, 204, 80)");
 
 	return (
-		<section style={{ paddingTop: '100px' }} id='advantages'>
+		<section id='advantages'>
 			<Container maxW={{ lg: '1440px' }} fontWeight={600} mb="20px">
 				<Heading as="h2" size={["xl", "2xl", "3xl", "4xl"]} mb="50px" textAlign="center" textTransform="uppercase">Advantages</Heading>
 				<div  className='advantages-icons'>
