@@ -12,6 +12,7 @@ const SliderItem = ({ changeBackground }: propsSlider) => {
         border: "1px solid black",
         borderRadius: "10px",
         background: "white",
+        margin: '0 auto'
       }}
       onClick={changeBackground}
     >

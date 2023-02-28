@@ -1,33 +1,27 @@
-import { Box } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
-import video from "./intro-video.mp4";
+import { Box, AspectRatio } from "@chakra-ui/react";
+import { useState } from "react";
+// import video from "./intro-video.mp4";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderItem from "./SliderItem";
 
 const Intro = () => {
-  const [videoContent, setVideoContent] = useState(video);
-  console.log("render videoooooo");
-
-  useEffect(() => {
-    console.log("state changed!");
-    setVideoContent("путь до видео");
-  }, [videoContent]);
+  const [videoContent, setVideoContent] = useState("first video");
 
   return (
-    <Box className="intro-section" mt="100px">
+    <Box className="intro-section" mt="100px" textAlign="center">
       <div
         className="video-block"
         style={{
           height: "50vh",
-          width: "80%",
+          width: "90%",
           border: "1px solid black",
           background: "rgba(0, 0, 0, 0.8)",
           marginBottom: "50px",
           color: "white",
           fontSize: "32px",
-          margin: '0 auto'
+          margin: "0 auto",
         }}
       >
         <video
@@ -42,7 +36,12 @@ const Intro = () => {
 
       <Swiper
         className="intro-slider"
-        style={{ maxWidth: "100vw", height: "80vh", display: "flex" }}
+        style={{
+          maxWidth: "100vw",
+          height: "80vh",
+          display: "flex",
+          marginTop: "20px",
+        }}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -60,16 +59,12 @@ const Intro = () => {
       >
         <SwiperSlide>
           <SliderItem
-            changeBackground={() =>
-              setVideoContent(
-                "https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              )
-            }
+            changeBackground={() => setVideoContent("second video")}
           />
         </SwiperSlide>
 
         <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("2")} />
+          <SliderItem changeBackground={() => setVideoContent("third video")} />
         </SwiperSlide>
 
         <SwiperSlide>
