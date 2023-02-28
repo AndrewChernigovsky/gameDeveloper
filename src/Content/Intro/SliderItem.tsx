@@ -8,7 +8,7 @@ const SliderItem = ({ changeBackground }: propsSlider) => {
       className="slider-item"
       style={{
         width: "300px",
-        height: "150px",
+        height: "25vh",
         border: "1px solid black",
         borderRadius: "10px",
         background: "white",

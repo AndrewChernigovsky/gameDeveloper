@@ -10,12 +10,13 @@ const Intro = () => {
   const [videoContent, setVideoContent] = useState("first video");
 
   return (
-    <Box className="intro-section" mt="100px" textAlign="center">
+    <Box className="intro-section">
       <div
         className="video-block"
         style={{
-          height: "50vh",
-          width: "90%",
+          height: "70vh",
+          width: "100%",
+          padding: 0,
           border: "1px solid black",
           background: "rgba(0, 0, 0, 0.8)",
           marginBottom: "50px",

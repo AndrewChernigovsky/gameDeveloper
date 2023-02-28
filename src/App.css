@@ -186,3 +186,7 @@ a img:not(:hover, :focus) {
 	color: rgb(255, 255, 255);
 	text-shadow: none;
 }
+
+.container {
+	padding: 0;
+}
