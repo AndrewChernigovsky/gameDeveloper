@@ -2,21 +2,129 @@
 	list-style-type: none;
 	padding-left: 20px;
 }
+
 .aboutMe-wrapper >* a {
 	font-weight: 600;
 	text-decoration: underline;
 }
+
 .aboutMe-wrapper >* a:hover {
 	opacity: 0.6;
 }
+
 .aboutMe-wrapper >* h3 {
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+
 .aboutMe-wrapper .aboutMe-text {
 	margin-bottom: 40px;
 }
+
 .aboutMe-avatar {
     display: flex;
     justify-content: flex-start;
+}
+
+.aboutMe-skills-block {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid white;
+	margin-bottom: 10px;
+}
+
+.aboutMe-skills-list {
+	display: flex;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	flex-wrap: wrap;
+}
+.aboutMe-skills-list li {
+	background-color: rgb(255, 168, 5);
+	padding: 5px;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 40px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.aboutMe-skills-list li::before {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-image: url('./../../images/icons/diamond.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	right: 5px;	
+}
+
+.aboutMe-skills-list li:nth-of-type(n+2) {
+	background-color: rgb(5, 22, 255);
+}
+
+.aboutMe-skills-list li:nth-of-type(-2n+2) {
+	background-color: rgb(255, 5, 226);
+}
+
+.name-skills {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.name-skills svg {
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+	fill: white;
+}
+
+.aboutMe-inner {
+	display: grid;
+}
+
+.avatar.aboutMe-avatar {
+	width: 300px;
+	min-width: 300px;
+	height: 300px;
+	margin-bottom: 20px;
+
+}
+
+.avatar.aboutMe-avatar img {
+	width: 300px;
+	min-width: 300px;
+	height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+	.aboutMe-inner {
+		display: flex;
+		justify-content: space-between;
+		min-width: 100%;
+	}
+	.name-skills svg{
+		width: 100px;
+		height: 100px;
+	}
+	.avatar.aboutMe-avatar {
+		width: 400px;
+		min-width: 400px;
+		height: 400px;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	.avatar.aboutMe-avatar img{
+		width: 400px;
+		height: 400px;
+	}
+	.aboutMe-skills {
+		margin-left: 10px;
+	}
 }

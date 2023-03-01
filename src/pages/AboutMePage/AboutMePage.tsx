@@ -1,5 +1,6 @@
 import './AboutMePage.css'
 import { images } from './../../Content/About/images';
+import { Coding, Sowftware, LevelSkills } from './Images'
 
 interface IModeTheme {
 	isDark: boolean;
@@ -9,13 +10,67 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 	return (
 		<main className="main">
 			<div className="aboutMe-wrapper">
-				<div className="avatar aboutMe-avatar ">
-					<picture>
-						<source media="(min-width: 768px)" srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@4x']} 2x, ${images.avatar['320px@4x']} 1x `} type="image/webp" />
-						<source media="(min-width: 480px)" srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@4x']} 2x, ${images.avatar['320px@2x']} 1x `} type="image/webp" />
-						<img src={`${images.avatar['320px']}`} srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@2x']} x, ${images.avatar['320px@1x']} 1x `} alt="avatar game developer Alexandr Volyanskiy" />
-					</picture>
+				<div className="aboutMe-inner">
+					<div className="avatar aboutMe-avatar ">
+						<picture>
+							<source media="(min-width: 768px)" srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@4x']} 2x, ${images.avatar['320px@4x']} 1x `} type="image/webp" />
+							<source media="(min-width: 480px)" srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@4x']} 2x, ${images.avatar['320px@2x']} 1x `} type="image/webp" />
+							<img src={`${images.avatar['320px']}`} srcSet={`${images.avatar['320px@4x']} 4x, ${images.avatar['320px@2x']} x, ${images.avatar['320px@1x']} 1x `} alt="avatar game developer Alexandr Volyanskiy" />
+						</picture>
+					</div>
+					<div className="aboutMe-skills">
+						<div className="aboutMe-skills-block">
+							<div className="name-skills">
+								<h2 className='title'>Coding</h2>
+								<Coding/>
+							</div>
+							
+							<ul  className='aboutMe-skills-list'>
+								<li><span>С++</span></li>
+								<li><span>С#</span></li>
+								<li><span>UE4 Blueprints</span></li>
+								<li><span>HTML</span></li>
+							</ul>
+							
+						</div>
+						<div className="aboutMe-skills-block">
+							<div className="name-skills">
+								<h2 className='title'>Software</h2>
+								<Sowftware/>
+							</div>
+					
+							<ul className='aboutMe-skills-list'>
+								<li><span>Perforce</span></li>
+								<li><span>GIT</span></li>
+								<li><span>SVN</span></li>
+								<li><span>Unreal Engine 4</span></li>
+							</ul>
+
+							<ul className='aboutMe-skills-list'>
+								<li><span>Premiero Pro</span></li>
+								<li><span>After Effects</span></li>
+							</ul>
+
+							<ul className='aboutMe-skills-list'>
+								<li><span>Visual Srudio</span></li>
+								<li><span>VMWare</span></li>
+							</ul>
+
+							<ul className='aboutMe-skills-list'>
+								<li><span>Word</span></li>
+								<li><span>PowerPonit</span></li>
+								<li><span>Excel</span></li>
+								<li><span>Outlook</span></li>
+							</ul>
+
+
+						</div>
+						
+
+
+					</div>
 				</div>
+
 				<div className="aboutMe-text">
 					<p>
 						У меня есть большой коммерческий опыт работы на позиции Дженералиста UE4/5 более 2 лет без учёта обучения с уклоном в Level дизайн. Поэтому мой опыт релевантен под вас.
