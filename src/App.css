@@ -72,7 +72,7 @@ body {
 }
 
 .main {
-	padding-top: 110px;
+	/* padding-top: 110px; */
 	flex: 1 0 auto;
 }
 
@@ -198,4 +198,8 @@ a img:not(:hover, :focus) {
 .wrapper-dark > * span {
 	color: rgb(255, 255, 255);
 	text-shadow: none;
+}
+
+.container {
+	padding: 0;
 }
