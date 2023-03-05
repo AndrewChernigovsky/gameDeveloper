@@ -1,8 +1,9 @@
-type propsSlider = {
+interface propsSlider {
   changeBackground: () => void;
+  videoPreview?: string
 };
 
-const SliderItem = ({ changeBackground }: propsSlider) => {
+const SliderItem = ({ changeBackground, videoPreview }: propsSlider) => {
   return (
     <div
       className="slider-item"
@@ -16,7 +17,7 @@ const SliderItem = ({ changeBackground }: propsSlider) => {
       }}
       onClick={changeBackground}
     >
-      <h1 style={{ color: "purple", fontSize: "32px" }}>video</h1>
+      <img src={videoPreview} alt="" />
     </div>
   );
 };

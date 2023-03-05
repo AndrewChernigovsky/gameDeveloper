@@ -1,45 +1,37 @@
-import { Box, AspectRatio } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useState } from "react";
-// import video from "./intro-video.mp4";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderItem from "./SliderItem";
 
 const Intro = () => {
-  const [videoContent, setVideoContent] = useState("first video");
+  const [videoContent, setVideoContent] = useState("UVZobZBuEO0");
 
   return (
     <Box className="intro-section">
       <div
         className="video-block"
         style={{
-          height: "70vh",
+          height: "100vh",
           width: "100%",
-          padding: 0,
-          border: "1px solid black",
-          background: "rgba(0, 0, 0, 0.8)",
-          marginBottom: "50px",
-          color: "white",
-          fontSize: "32px",
-          margin: "0 auto",
         }}
       >
-        <video
-          style={{ height: "100%", border: "3px solid red" }}
-          autoPlay
-          muted
-          loop
-        >
-          <source src={videoContent} />
-        </video>
+        <iframe
+          height="100%"
+          width="100%"
+          src={`https://www.youtube.com/embed/${videoContent}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videoContent}`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <Swiper
         className="intro-slider"
         style={{
           maxWidth: "100vw",
-          height: "80vh",
+          height: "25vh",
           display: "flex",
           marginTop: "20px",
         }}
@@ -58,38 +50,60 @@ const Intro = () => {
           },
         }}
       >
-        <SwiperSlide>
+        <SwiperSlide style={{ height: "25vh" }}>
           <SliderItem
-            changeBackground={() => setVideoContent("second video")}
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("oKFHPyn-Q84")}
           />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("third video")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("3")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("3")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("4")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("4")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("5")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("5")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("6")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("6")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("7")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("7")}
+          />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <SliderItem changeBackground={() => setVideoContent("8")} />
+        <SwiperSlide style={{ height: "25vh" }}>
+          <SliderItem
+            // videoPreview={videoPreview}
+            changeBackground={() => setVideoContent("8")}
+          />
         </SwiperSlide>
       </Swiper>
     </Box>
