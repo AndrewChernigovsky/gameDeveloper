@@ -1,6 +1,6 @@
 import './AboutMePage.css'
 import { images } from './../../Content/About/images';
-import { Coding, Sowftware, LevelSkills } from './Images'
+import { Coding, Sowftware} from './Images'
 
 interface IModeTheme {
 	isDark: boolean;
@@ -9,7 +9,7 @@ interface IModeTheme {
 const AboutMePage = ({ isDark }: IModeTheme) => {
 	return (
 		<main className="main">
-			<div className="aboutMe-wrapper">
+			<div className="aboutMe-wrapper container">
 				<div className="aboutMe-inner">
 					<div className="avatar aboutMe-avatar ">
 						<picture>

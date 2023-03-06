@@ -5,7 +5,7 @@ const Skills = () => {
     const skillsColor = useColorModeValue('#FFFFFF', '#000000')
 
     return (
-    <section id="skills">
+		<section id="skills" className='container'>
             <Container
                 maxW={{ lg: '1440px' }}
                 fontWeight={600}

@@ -3,7 +3,9 @@ import HomePage from "./pages/HomePage/Homepage";
 import Footer from "./layout/Footer/Footer";
 import "./App.css";
 
-import { background, useColorMode, Box } from "@chakra-ui/react";
+import {useState} from "react";
+
+import { useColorMode, Box } from "@chakra-ui/react";
 
 import Cursor from './layout/Cursor/Cursor';
 
@@ -20,16 +22,19 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const isDark = colorMode === 'dark';
+	const [opacityHeader, setOpacityHeader] = useState("0.1");
 
 	return (
 		<div className={`${isDark ? "wrapper-dark" :  " wrapper-ligth"  }`}>
-			<div className="container">
+			<div className="all">
 				<Header
 					toggleColorMode={toggleColorMode}
 					isDark={isDark}
+					opacityHeader={opacityHeader}
+
 				/>
 				<Routes>
-					<Route path="/" element={<HomePage isDark={isDark} />} />
+					<Route path="/" element={<HomePage isDark={isDark} setOpacityHeader={setOpacityHeader} />} />
 					<Route path="/about" element={<AboutMePage isDark={isDark} />} />
 					<Route path="/project1" element={<Project1 />} />
 					<Route path="/project2" element={<Project2 />} />

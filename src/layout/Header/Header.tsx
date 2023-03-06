@@ -10,15 +10,16 @@ import { Link } from "react-router-dom";
 interface IModeTheme {
 	toggleColorMode: () => void;
 	isDark: boolean;
+	opacityHeader: any;
 }
 
-const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
+const Header = ({ toggleColorMode, isDark, opacityHeader}: IModeTheme) => {
 	const [display, changeDisplay] = useState('none');
 	const color = useColorModeValue('#8b00ff', '#000080');
 	const colorHeader = useColorModeValue(' #0a0a0a ', '#FFCC50');
 
 	return (
-		<header style={{ backgroundColor: colorHeader, minHeight: '70px', position: 'fixed', top: '0', minWidth: '100%', borderBottom: `1px solid ${color}`, color: color, zIndex: 551, left: '0' }} className={`${isDark ? 'dark-theme' : ''}`}>
+		<header style={{ backgroundColor: colorHeader, minHeight: '70px', position: 'fixed', top: '0', minWidth: '100%', borderBottom: `1px solid ${color}`, color: color, zIndex: 551, left: '0', opacity: opacityHeader, transition: "0.3s"}} className={`${isDark ? 'dark-theme' : ''}`}>
 
 			<Container maxW='1440px' fontWeight={600}>
 				<Flex>
@@ -54,7 +55,6 @@ const Header = ({ toggleColorMode, isDark }: IModeTheme) => {
 					</Flex>
 					<Flex flexDir="column" align="center" maxW='1440px'>
 						<HashLink smooth to="/#aboutMe" className="link">About Me</HashLink>
-						<HashLink smooth to="/#projects" className="link">Commercial Projects</HashLink>
 						<HashLink smooth to="/#skills" className="link">Skills</HashLink>
 					</Flex>
 				</Flex>
