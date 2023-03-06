@@ -7,17 +7,17 @@ import IntroText from './../../Content/IntroText/IntroText';
 
 interface IModeTheme {
 	isDark: boolean;
+	setOpacityHeader: any;
 }
 
-const HomePage = ({ isDark }: IModeTheme) => {
+const HomePage = ({ isDark, setOpacityHeader }: IModeTheme) => {
 	return (
 		<main className="main">
-			<Intro />
+			<Intro setOpacityHeader={setOpacityHeader} />
 			<IntroText />
 			<Skills />
-			<About isDark={isDark} />
 			<Advantages/> 
-			<Portfolio />
+			<About isDark={isDark} />
 		</main>
 	);
 }

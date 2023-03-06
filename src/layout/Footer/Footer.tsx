@@ -8,12 +8,11 @@ const Footer = () => {
 	const bgColor = useColorModeValue("rgba(212,212,212,0.5)", "rgba(122,122,122,0.4)");
 
 	return (<>
-		<footer>
+		<footer className='container'>
 			<Container
 				maxW={{ lg: "1440px" }}
-				borderTop={`1px solid #8b00ff`}
+				borderTop={`1px solid ${color}`}
 				className="container"
-				backgroundColor={bgColor}
 			>
 				<Grid
 					m="0 auto"

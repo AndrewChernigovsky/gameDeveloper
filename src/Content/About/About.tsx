@@ -10,7 +10,7 @@ interface IModeTheme {
 
 const About = ({isDark}: IModeTheme) => {
 	return (
-		<Box className="about-section"  m='0 auto'>
+		<Box className="about-section container"  m='0 auto' pb='50px'>
 			<Heading as='h2' size={["xl", "2xl", "3xl", "4xl"]} textAlign='center' mb='30px'>ABOUT ME</Heading>
 			<Container
 				display={["grid", "grid", "flex", "flex"]}

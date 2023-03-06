@@ -4,6 +4,15 @@
 	cursor: none;
 }
 
+iframe {
+	cursor: none;
+}
+
+#player, #container_id, .video-block {
+	cursor: none;
+	pointer-events: none;
+}
+
 html,
 body {
 	height: 100%;
@@ -53,26 +62,30 @@ body {
 }
 
 .intro-section {
-	/* display: none; */
+	padding-bottom: 20px;
+	background: rgba(6, 6, 6, 0.4);
+	box-shadow: 0 0 1rem 0 rgb(0, 0, 0);
 }
 
 .container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.all {
+	display: flex;
+	flex-direction: column;
 	background: rgba(6, 6, 6, 0.8);
 	position: relative;
 	box-shadow: 0 0 1rem 0 rgb(0, 0, 0);
 	border-radius: 3px;
 	height: inherit;
 	min-height: inherit;
-	padding: inherit;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding: 0 10px;
-	display: flex;
-	flex-direction: column;
 }
 
 .main {
-	/* padding-top: 110px; */
+	padding-top: 110px;
 	flex: 1 0 auto;
 }
 
@@ -203,3 +216,19 @@ a img:not(:hover, :focus) {
 .container {
 	padding: 0;
 }
+
+.intro-slider.swiper{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+	min-width: 100%;
+	width: 10%;
+}
+
+/* .intro-slider .swiper-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+	min-width: 10%;
+	width: 10%;
+} */
