@@ -19,6 +19,8 @@ import AboutMePage  from './pages/AboutMePage/AboutMePage'
 
 import { Route, Routes } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const isDark = colorMode === 'dark';

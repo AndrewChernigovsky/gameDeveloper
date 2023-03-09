@@ -1,7 +1,9 @@
+
 interface propsSlider {
-  changeBackground: () => void;
-  videoPreview?: string
+  changeBackground?: () => void;
+  videoPreview?: string;
 };
+
 
 const SliderItem = ({ changeBackground, videoPreview }: propsSlider) => {
   return (
