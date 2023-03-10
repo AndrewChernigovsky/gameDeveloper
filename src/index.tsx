@@ -7,9 +7,19 @@ import { ChakraProvider } from '@chakra-ui/react';
 import {HashRouter} from 'react-router-dom'
 import { Darktheme } from './layout/theme';
 
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+	//
+  });
+  
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
 	<React.StrictMode>
 		<HashRouter>

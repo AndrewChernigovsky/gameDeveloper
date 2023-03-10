@@ -3,9 +3,7 @@ import { useState } from "react";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SliderItem from "./SliderItem";
 
-import Modal from "./Modal";
 import project1 from "../../images/content/projects/project1/project1P768px@4x.webp";
 import project2 from "../../images/content/projects/project2/project2P768px@4x.webp";
 import project3 from "../../images/content/projects/project3/project3P768px@4x.webp";
@@ -21,6 +19,8 @@ import project13 from "../../images/content/projects/project13/project13P768px@4
 import project14 from "../../images/content/projects/project14/project14P768px@4x.webp";
 import project15 from "../../images/content/projects/project15/project15P768px@4x.webp";
 import project16 from "../../images/content/projects/project16/project16P768px@4x.webp";
+
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 interface IOpactity {
   setOpacityHeader: (num: any) => void;
@@ -72,6 +72,7 @@ const Intro = ({ setOpacityHeader }: IOpactity) => {
             height: "25vh",
             display: "flex",
             marginTop: "20px",
+            justifyContent: "space-around",
           }}
           breakpoints={{
             320: {
@@ -88,56 +89,86 @@ const Intro = ({ setOpacityHeader }: IOpactity) => {
             },
           }}
         >
-          <div>
-            <SwiperSlide style={{ height: "25vh" }}>
-              <Modal image={project1} />
-            </SwiperSlide>
-          </div>
+          <SwiperSlide
+            style={{ height: "25vh" }}
+            onClick={() => setVideoContent("lpTYyokjECk")}
+          >
+            <a data-fancybox="gallery" href={project1}>
+              <img src={project1} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project2}>
+              <img src={project2} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project3}>
+              <img src={project3} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project4}>
+              <img src={project4} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project5}>
+              <img src={project5} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project6}>
+              <img src={project6} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project7}>
+              <img src={project7} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project9}>
+              <img src={project9} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project10}>
+              <img src={project10} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project11}>
+              <img src={project11} alt="project " />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project12}>
+              <img src={project12} alt="project " />
+            </a>
+          </SwiperSlide>
 
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project2} />
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project13}>
+              <img src={project13} alt="project " />
+            </a>
           </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project3} />
+
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project14}>
+              <img src={project14} alt="project " />
+            </a>
           </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project4} />
+
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project15}>
+              <img src={project15} alt="project " />
+            </a>
           </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project5} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project6} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project7} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project9} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project9} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project10} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project11} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project12} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project13} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project14} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project15} />
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "25vh" }}>
-            <Modal image={project16} />
+          <SwiperSlide>
+            <a data-fancybox="gallery" href={project16}>
+              <img src={project16} alt="project " />
+            </a>
           </SwiperSlide>
         </Swiper>
       </div>

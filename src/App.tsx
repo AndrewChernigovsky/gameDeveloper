@@ -19,7 +19,7 @@ import AboutMePage  from './pages/AboutMePage/AboutMePage'
 
 import { Route, Routes } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 function App() {
 	const { colorMode, toggleColorMode } = useColorMode();

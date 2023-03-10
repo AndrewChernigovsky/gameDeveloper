@@ -8,6 +8,7 @@
     "@chakra-ui/react": "^2.5.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fancyapps/ui": "^5.0.6",
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,10 +17,8 @@
     "@types/node": "^16.18.12",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
-    "bootstrap": "^5.2.3",
     "framer-motion": "^9.0.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-router-hash-link": "^2.4.3",
@@ -55,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "@types/fancybox": "^3.5.3",
     "@types/react-router-hash-link": "^2.4.5",
     "gh-pages": "^5.0.0"
   }
