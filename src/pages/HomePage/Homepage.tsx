@@ -1,6 +1,5 @@
 import About from "../../Content/About/About";
 import Intro from "../../Content/Intro/Intro";
-import Portfolio from "../../Content/Portfolio/Portfolio";
 import Advantages from "./../../Content/Advantages/Advantages"
 import Skills from './../../Content/Skills/Skills';
 import IntroText from './../../Content/IntroText/IntroText';
@@ -11,9 +10,12 @@ interface IModeTheme {
 }
 
 const HomePage = ({ isDark, setOpacityHeader }: IModeTheme) => {
+
+
+
 	return (
-		<main className="main">
-			<Intro setOpacityHeader={setOpacityHeader} />
+		<main className='main'>
+			<Intro setOpacityHeader={setOpacityHeader}/>
 			<IntroText />
 			<Skills />
 			<Advantages/> 

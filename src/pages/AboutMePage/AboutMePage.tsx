@@ -21,21 +21,21 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 					<div className="aboutMe-skills">
 						<div className="aboutMe-skills-block">
 							<div className="name-skills">
-								<h2 className='title'>Coding</h2>
+								<h2 className='title'>Coding SQL</h2>
 								<Coding/>
 							</div>
 							
 							<ul  className='aboutMe-skills-list'>
 								<li><span>С++</span></li>
 								<li><span>С#</span></li>
-								<li><span>UE4 Blueprints</span></li>
+								<li><span>UE Blueprints</span></li>
 								<li><span>HTML</span></li>
 							</ul>
 							
 						</div>
 						<div className="aboutMe-skills-block">
 							<div className="name-skills">
-								<h2 className='title'>Software</h2>
+								<h2 className='title'>Software SSMS</h2>
 								<Sowftware/>
 							</div>
 					
@@ -43,12 +43,11 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 								<li><span>Perforce</span></li>
 								<li><span>GIT</span></li>
 								<li><span>SVN</span></li>
-								<li><span>Unreal Engine 4</span></li>
+								<li><span>Unreal Engine</span></li>
 							</ul>
 
 							<ul className='aboutMe-skills-list'>
-								<li><span>Premiero Pro</span></li>
-								<li><span>After Effects</span></li>
+								<li><span>DaVinci Resolve</span></li>
 							</ul>
 
 							<ul className='aboutMe-skills-list'>
@@ -58,7 +57,7 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 
 							<ul className='aboutMe-skills-list'>
 								<li><span>Word</span></li>
-								<li><span>PowerPonit</span></li>
+								<li><span>PowerPoint</span></li>
 								<li><span>Excel</span></li>
 								<li><span>Outlook</span></li>
 							</ul>
@@ -73,10 +72,7 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 
 				<div className="aboutMe-text">
 					<p>
-						У меня есть большой коммерческий опыт работы на позиции Дженералиста UE4/5 более 2 лет без учёта обучения с уклоном в Level дизайн. Поэтому мой опыт релевантен под вас.
-						C++ изучаю примерно с 14 лет
-						В контексте unreal +- 1.5 года
-						Лидер, управлял работой двух крупных команд в общей сумме около полугода
+						У меня большой коммерческий опыт работы на позиции Дженералиста UE4/5 более 2 лет без учёта обучения.  C++ изучаю примерно с 14 лет В контексте unreal +- 1.5 года Лидер, управлял работой двух крупных команд. За созданием незабываемых локаций, сложных механик, реализации любой вашей идеи обращайтесь ко мне. Рассчитываю на долгую и плодотворную работу. 
 					</p>
 				</div>
 				<div className="aboutMe-text">
@@ -109,7 +105,7 @@ const AboutMePage = ({ isDark }: IModeTheme) => {
 					<ul>
 						<li><span>- Почта:  <a href="mailto:stiem.ru@mail.ru ">stiem.ru@mail.ru </a></span></li>
 						<li><span>- Телефон: <a href="tel:+79203388540">+7920 33 88 540</a></span></li>
-						<li><span>- Мои работы – <a href="https://drive.google.com/drive/folders/1M-o3jNEEJGLkU_y6nerZfIbV6qEcrYjD">Google Диск</a></span></li>
+						<li><span>- Мои работы – <a href="https://drive.google.com/drive/folders/1M-o3jNEEJGLkU_y6nerZfIbV6qEcrYjD" target="_blank">Google Диск</a></span></li>
 					</ul>
 				</div>
 			</div>

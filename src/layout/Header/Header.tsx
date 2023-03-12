@@ -71,9 +71,6 @@ const Header = ({ toggleColorMode, isDark, opacityHeader}: IModeTheme) => {
 								minHeight="70px"
 							>
 								<HashLink to="/#aboutMe" className='link'>About Me</HashLink>
-								<HashLink to="/#projects" className='link'>
-									Commercial Projects
-								</HashLink>
 								<HashLink to="/#skills" className='link'>Skills</HashLink>
 							</Flex>
 						</Flex>

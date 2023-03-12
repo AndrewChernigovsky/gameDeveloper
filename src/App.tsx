@@ -24,7 +24,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 function App() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const isDark = colorMode === 'dark';
-	const [opacityHeader, setOpacityHeader] = useState("0.1");
+	const [opacityHeader, setOpacityHeader] = useState(0.1);
 
 	return (
 		<div className={`${isDark ? "wrapper-dark" :  " wrapper-ligth"  }`}>
@@ -36,7 +36,7 @@ function App() {
 
 				/>
 				<Routes>
-					<Route path="/" element={<HomePage isDark={isDark} setOpacityHeader={setOpacityHeader} />} />
+					<Route path="/" element={<HomePage isDark={isDark} setOpacityHeader={setOpacityHeader}/>} />
 					<Route path="/about" element={<AboutMePage isDark={isDark} />} />
 					<Route path="/project1" element={<Project1 />} />
 					<Route path="/project2" element={<Project2 />} />
