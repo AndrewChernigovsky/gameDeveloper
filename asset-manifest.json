@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gameDeveloper/static/css/main.94171ec6.css",
-    "main.js": "/gameDeveloper/static/js/main.019cc4b2.js",
+    "main.js": "/gameDeveloper/static/js/main.3f3bdcdc.js",
     "static/js/787.44bd52ee.chunk.js": "/gameDeveloper/static/js/787.44bd52ee.chunk.js",
     "static/media/sega-the-death-egg.gif": "/gameDeveloper/static/media/sega-the-death-egg.c5beaa9fb6e02ece7051.gif",
     "static/media/project1P1440px@4x.webp": "/gameDeveloper/static/media/project1P1440px@4x.e26592d8e5b3e88a2a94.webp",
@@ -86,11 +86,11 @@
     "static/media/diamond.svg": "/gameDeveloper/static/media/diamond.76722312dbca9e392f0d.svg",
     "index.html": "/gameDeveloper/index.html",
     "main.94171ec6.css.map": "/gameDeveloper/static/css/main.94171ec6.css.map",
-    "main.019cc4b2.js.map": "/gameDeveloper/static/js/main.019cc4b2.js.map",
+    "main.3f3bdcdc.js.map": "/gameDeveloper/static/js/main.3f3bdcdc.js.map",
     "787.44bd52ee.chunk.js.map": "/gameDeveloper/static/js/787.44bd52ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94171ec6.css",
-    "static/js/main.019cc4b2.js"
+    "static/js/main.3f3bdcdc.js"
   ]
 }
